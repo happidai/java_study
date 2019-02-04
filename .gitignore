@@ -14,3 +14,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 .idea/workspace.xml
 .idea/misc.xml
+sandbox/src/main/java/first/train/sandbox/MySecondProgram.java

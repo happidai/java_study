@@ -4,19 +4,22 @@ import static jdk.nashorn.internal.objects.NativeMath.sqrt;
 
 public class Point {
 
-   public double p1;
-   public double p2;
+    public double x;
+    public double y;
 
-   public Point (double p1, double p2){
-       this.p1 = p1;
-       this.p2 = p2;
-     
 
-   }
+    public Point(double xpoint, double ypoint) {
+        this.x = xpoint;
+        this.y = ypoint;
 
-   public static double distance(Point p1, Point p2){
-       return (double) Math.sqrt();
-   }
+    }
+
+    public static double distance(Point p1, Point p2) {
+        double dx = p1.x - p2.x;
+        double dy = p1.y - p2.y;
+        return Math.sqrt(dx*dx + dy*dy);
+
+    }
 
 
 }
