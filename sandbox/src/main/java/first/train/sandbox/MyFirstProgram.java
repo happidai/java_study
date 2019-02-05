@@ -22,10 +22,10 @@ public class MyFirstProgram {
 //        System.out.println("Площадь прямоугольника со сторонами " + r.a + " и "+ r.b + " - " + r.area());
 
 
-        Point a = new Point(2.0, 3.0);
-        Point b = new Point(5.0, 8.0 );
+        Point p1 = new Point(2.0, 3.0);
+        Point p2 = new Point(5.0, 8.0 );
 
-        System.out.println("Distance is: " + Point.distance(a,b));
+        System.out.println("Distance is: " + p1.distance(p2));
 
 
 
