@@ -21,7 +21,6 @@ public class Point {
         return Math.sqrt(dx * dx + dy * dy);
 
     }
-
     double distance(Point p) {
         return distance(p.x, p.y);
     }
