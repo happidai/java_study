@@ -15,13 +15,11 @@ public class Point {
 
     }
 
-    public double distance(double x, double y) {
-        double dx = this.x - x;
-        double dy = this.y - y;
+    public double distance(Point p) {
+        double dx = this.x - p.x;
+        double dy = this.y - p.y;
         return Math.sqrt(dx * dx + dy * dy);
 
     }
-    double distance(Point p) {
-        return distance(p.x, p.y);
-    }
+
 }
