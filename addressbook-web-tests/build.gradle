@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = "first.train.sandbox.MyFirstProgram"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.0.0-beta3'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+}
