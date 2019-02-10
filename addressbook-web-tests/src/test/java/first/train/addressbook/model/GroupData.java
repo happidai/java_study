@@ -1,4 +1,4 @@
-package first.train.addressbook;
+package first.train.addressbook.model;
 
 public class GroupData {
     private final String name;

@@ -1,4 +1,4 @@
-package first.train.addressbook;
+package first.train.addressbook.model;
 
 public class EntryData {
     private final String firstname;

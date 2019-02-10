@@ -1,7 +1,8 @@
-package first.train.addressbook;
+package first.train.addressbook.tests;
 
 import java.util.concurrent.TimeUnit;
 
+import first.train.addressbook.model.EntryData;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
