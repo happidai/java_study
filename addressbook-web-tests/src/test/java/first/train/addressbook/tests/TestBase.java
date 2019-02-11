@@ -1,9 +1,6 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.appmanager.ApplicationManager;
-import first.train.addressbook.model.EntryData;
-import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
