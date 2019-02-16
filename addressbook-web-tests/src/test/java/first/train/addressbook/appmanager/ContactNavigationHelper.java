@@ -1,12 +1,13 @@
 package first.train.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ContactNavigationHelper extends HelperBase{
     private FirefoxDriver wd;
 
-    public ContactNavigationHelper(FirefoxDriver wd) {
+    public ContactNavigationHelper(WebDriver wd) {
         super(wd);
     }
 
