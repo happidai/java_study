@@ -15,7 +15,11 @@ public class ContactNavigationHelper extends HelperBase{
         click(By.linkText("add new"));
     }
 
-    public void gotoHomePage() {click(By.linkText("home page"));
+    public void gotoHomePage() {
+        if(isElementPresent(By.id("maintable"))){
+            return;
+        }
+        click(By.linkText("home page"));
     }
 }
 
