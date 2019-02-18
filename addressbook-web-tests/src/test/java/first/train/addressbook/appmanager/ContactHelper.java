@@ -1,6 +1,7 @@
 package first.train.addressbook.appmanager;
 
 import first.train.addressbook.model.ContactData;
+import first.train.addressbook.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +38,8 @@ public class ContactHelper extends HelperBase {
 
 
     public void selectContact() {
-        click(By.xpath("//input[@id='5']"));
+        click(By.xpath("//input[@name='selected[]']"));
+       // click(By.name("selected[]"));
     }
 
 
@@ -57,6 +59,18 @@ public class ContactHelper extends HelperBase {
 
     public void closeAlert() {
         wd.switchTo().alert().accept();
+    }
+
+    public boolean isThereAContact() {
+        return isElementPresent(By.xpath("//input[@id='selected[]']"));
+        //return isElementPresent(By.name("selected[]"));
+    }
+
+    public void createContact(ContactData contactData) {
+
+        fillContactForm(contactData, true);
+        submitContactCreation();
+
     }
 }
 
