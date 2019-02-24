@@ -43,7 +43,7 @@ public class ApplicationManager {
 
 
     public void stop() {
-        logout();
+       // logout();
         wd.quit();
     }
 
