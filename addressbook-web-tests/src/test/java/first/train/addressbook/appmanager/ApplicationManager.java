@@ -1,5 +1,6 @@
 package first.train.addressbook.appmanager;
 
+import first.train.addressbook.tests.ContactDeletionTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +19,7 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
     private String browser;
 
+
     public ApplicationManager(String browser) {
         this.browser = browser;
     }
@@ -32,13 +34,18 @@ public class ApplicationManager {
             wd = new InternetExplorerDriver();
         }
 
-        wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        delay(0);
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         contactNavigationHelper = new ContactNavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
         sessionHelper.login("admin", "secret");
+
+    }
+
+    public void delay(int time) {
+        wd.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
     }
 
 
