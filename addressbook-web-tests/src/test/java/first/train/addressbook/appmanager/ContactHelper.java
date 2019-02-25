@@ -47,8 +47,8 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public void initContactModification() {
-        click(By.xpath("//img[@alt='Edit']"));
+    public void initContactModification(int index) {
+        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
     }
 
     public void submitContactModification() {
@@ -66,7 +66,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean isThereAContact() {
-        return isElementPresent(By.xpath("//input[@id='selected[]']"));
+        return isElementPresent(By.xpath(".//tr[@name='entry']"));
         //return isElementPresent(By.name("selected[]"));
     }
 
@@ -83,7 +83,7 @@ public class ContactHelper extends HelperBase {
         for (WebElement element : elements) {
             String firstname = element.findElement(By.xpath(".//td[3]")).getText();
             String lastname = element.findElement(By.xpath(".//td[2]")).getText();
-           // int id = Integer.parseInt(element.findElement(By.xpath("//input[@name='selected[]']")).getAttribute("value"));
+           //int id = Integer.parseInt(element.findElement(By.xpath("//input[@name='selected[]']")).getAttribute("value"));
             ContactData contact = new ContactData(firstname, lastname, null, null, null, null);
             contacts.add(contact);
         }
@@ -93,14 +93,3 @@ public class ContactHelper extends HelperBase {
     }
 }
 
-//    public List<GroupData> getGroupList() {
-//        List<GroupData> groups = new ArrayList<GroupData>();
-//        List<WebElement> elements = wd.findElements(By.cssSelector("span.group"));
-//        for(WebElement element : elements){
-//            String name = element.getText();
-//            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-//            GroupData group = new GroupData(id, name, null, null);
-//            groups.add(group);
-//        }
-//        return groups;
-//    }
