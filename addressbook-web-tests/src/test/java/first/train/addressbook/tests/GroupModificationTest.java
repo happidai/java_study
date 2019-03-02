@@ -1,6 +1,7 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.model.GroupData;
+import first.train.addressbook.model.Groups;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -8,6 +9,9 @@ import org.testng.annotations.Test;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class GroupModificationTest extends TestBase {
 
@@ -24,21 +28,22 @@ public class GroupModificationTest extends TestBase {
     @Test
     public void testGroupModification() {
 
-        Set<GroupData> before = app.group().all();
+        Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
         GroupData group = new GroupData()
                 .withId(modifiedGroup.getId()).withName("test3").withHeader("test1").withFooter("test2");
         app.group().modify(group);
-        Set<GroupData> after = app.group().all();
+        Groups after = app.group().all();
         Assert.assertEquals(after.size(), before.size());
+        assertThat(after, equalTo(before.without(modifiedGroup).withAdded(group)));
 
 
-        before.remove(modifiedGroup);
-        before.add(group);
-//        Comparator<? super GroupData> ById = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-//        before.sort(ById);
-//        after.sort(ById);
-        Assert.assertEquals(before, after);
+//        before.remove(modifiedGroup);
+//        before.add(group);
+////        Comparator<? super GroupData> ById = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+////        before.sort(ById);
+////        after.sort(ById);
+//        Assert.assertEquals(before, after);
 
 
     }
