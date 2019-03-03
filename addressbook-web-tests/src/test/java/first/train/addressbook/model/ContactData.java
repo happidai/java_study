@@ -4,18 +4,46 @@ import java.util.Objects;
 
 public class ContactData {
 
-    public void setGroup(String group) {
-        this.group = group;
-    }
-
-
-    private int id = Integer.MAX_VALUE;;
+     private int id = Integer.MAX_VALUE;;
     private String firstname;
     private String lastname;
     private String address;
-    private String mobile;
+    private String mobilePhone;
+    private String homePhone;
+    private String workPhone;
     private String email;
+
+
+    public ContactData withMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
+        return this;
+    }
+
+    public String getHomePhone() {
+        return homePhone;
+    }
+
+    public ContactData withHomePhone(String homePhone) {
+        this.homePhone = homePhone;
+        return this;
+    }
+
+    public String getWorkPhone() {
+        return workPhone;
+    }
+
+    public ContactData withWorkPhone(String workPhone) {
+        this.workPhone = workPhone;
+        return this;
+    }
+
+
     private String group;
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+        return this;
+    }
 
     public ContactData withId(int id) {
         this.id = id;
@@ -37,12 +65,8 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withMobile(String mobile) {
-        this.mobile = mobile;
-        return this;
-    }
 
-    public ContactData withEmail(String email) {
+       public ContactData withEmail(String email) {
         this.email = email;
         return this;
     }
@@ -88,8 +112,8 @@ public class ContactData {
         return address;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getMobilePhone() {
+        return mobilePhone;
     }
 
     public String getEmail() {
