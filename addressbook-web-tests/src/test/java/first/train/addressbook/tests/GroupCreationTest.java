@@ -29,31 +29,32 @@ public class GroupCreationTest extends TestBase {
         Groups before = app.group().all();
         GroupData group = new GroupData().withName("test2");
         app.group().create(group);
+        assertThat(app.group().count(), equalTo(before.size()+1));
         Groups after = app.group().all();
-        assertThat(after.size(), equalTo(before.size()+1));
-
 
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 
+   }
 
 
-//        int max = 0;
-//        for(GroupData g : after){
-//            if(g.getId() > max){
-//                max = g.getId();
-//            }
-//        }
+    @Test
+    public void testBadGroupCreation() throws Exception {
 
-//        Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
-//        int max1 = after.stream().max(byId).get().getId();
-//        group.setId(max1);
-//        before.add(group);
-//        Comparator<? super GroupData> ById = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-//        before.sort(ById);
-//        after.sort(ById);
+        app.goTo().groupPage();
+        Groups before = app.group().all();
+        GroupData group = new GroupData().withName("test2'");
+        app.group().create(group);
+        assertThat(app.group().count(), equalTo(before.size()));
+        Groups after = app.group().all();
+
+        assertThat(after, equalTo(before));
 
     }
+
+
+
+
 
 }
 

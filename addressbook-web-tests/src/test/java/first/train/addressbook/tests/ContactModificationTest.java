@@ -10,13 +10,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+
 public class ContactModificationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions(){
-        app.goToContact().gotoContactPageEdit();
+        app.goToContact().HomePage();
 
         if(app.contact().all().size() == 0){
+            app.goToContact().gotoContactPageEdit();
             app.contact().createContact(new ContactData().withFirstname("Olga").withLastname("Zhivotovskaia").withAddress("St.-P.").withMobile("+79218812075").withEmail("happidai@gmail.com"));
         }
     }
@@ -30,8 +34,9 @@ public class ContactModificationTest extends TestBase {
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("Olga").withLastname("Zhivotovskaia");
         app.contact().modifyContact(contact);
         app.goToContact().HomePage();
+        assertThat(app.contact().count(), equalTo(before.size()));
         Set<ContactData> after = app.contact().all();
-        Assert.assertEquals(after.size(), before.size());
+
 
         before.remove(modifiedContact);
         before.add(contact);
