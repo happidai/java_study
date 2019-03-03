@@ -20,7 +20,7 @@ public class GroupModificationTest extends TestBase {
 
         app.goTo().groupPage();
         if (app.group().all().size() == 0) {
-            app.group().create(new GroupData("test1", null, null));
+            app.group().create(new GroupData().withName("test1"));
         }
     }
 
@@ -30,8 +30,7 @@ public class GroupModificationTest extends TestBase {
 
         Groups before = app.group().all();
         GroupData modifiedGroup = before.iterator().next();
-        GroupData group = new GroupData()
-                .withId(modifiedGroup.getId()).withName("test3").withHeader("test1").withFooter("test2");
+        GroupData group = new GroupData().withId(modifiedGroup.getId()).withName("test3").withHeader("test1").withFooter("test2");
         app.group().modify(group);
         Groups after = app.group().all();
         Assert.assertEquals(after.size(), before.size());

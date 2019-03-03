@@ -1,39 +1,44 @@
 package first.train.addressbook.tests;
 
-import first.train.addressbook.appmanager.HelperBase;
 import first.train.addressbook.model.ContactData;
-import first.train.addressbook.model.GroupData;
-import org.openqa.selenium.WebDriver;
+import first.train.addressbook.model.Contacts;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
+import java.util.Set;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.testng.Assert.assertEquals;
 
 public class ContactDeletionTest extends TestBase {
+
+    @BeforeMethod
+    public void ensurePreconditions(){
+        app.goToContact().HomePage();
+
+        if(app.contact().all().size() == 0){
+            app.contact().createContact(new ContactData().withFirstname("Olga").withLastname("Zhivotovskaia").withAddress("St.-P.").withMobile("+79218812075").withEmail("happidai@gmail.com"));
+        }
+    }
 
 
     @Test
     public void testContactDeletion() throws Exception {
 
+        Contacts before = app.contact().all();
+        ContactData deletedContact = before.iterator().next();
+        app.contact().delete(deletedContact);
+        app.delay(10);
+        app.goToContact().HomePage();
+        Contacts after = app.contact().all();
+        assertEquals(after.size(), before.size() - 1);
+        assertThat(after, equalTo(before.without(deletedContact)));
 
-        app.getContactNavigationHelper().gotoHomePage();
-        if (!app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new ContactData("Olga", "Zhivotovskaia", "St.-P.", "+79218812075", "happidai@gmail.com", "test1"));
-        }
-        List<ContactData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().initContactModification(before.size() - 1);
-        app.getContactHelper().deleteSelectedContact();
-        app.delay(20);
-        app.getContactNavigationHelper().gotoHomePage();
-        List<ContactData> after = app.getContactHelper().getContactList();
-        Assert.assertEquals(after.size(), before.size() - 1);
-
-
-        before.remove(before.size()-1);
-        Assert.assertEquals(before, after);
 
     }
+
 
 
 }

@@ -21,7 +21,7 @@ this.delegate = new HashSet<GroupData>(groups.delegate);
 
     @Override
     protected Set<GroupData> delegate() {
-        return null;
+        return delegate;
     }
 
     public Groups withAdded(GroupData group){
