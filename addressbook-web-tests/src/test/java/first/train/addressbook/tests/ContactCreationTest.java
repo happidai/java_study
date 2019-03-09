@@ -2,11 +2,15 @@ package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
+import first.train.addressbook.model.GroupData;
 import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -16,12 +20,20 @@ import static org.hamcrest.Matchers.equalTo;
 public class ContactCreationTest extends TestBase {
 
 
-    @Test
-    public void testContactCreation() throws Exception {
-
-        Contacts before = app.contact().all();
+    @DataProvider
+    public Iterator<Object[]> validContacts() {
+        List<Object[]> list = new ArrayList<Object[]>();
         File photo = new File("src/test/resources/stru.png");
-        ContactData contact = new ContactData().withFirstname("Olga").withLastname("Zhivotovskaia").withPhoto(photo);
+        list.add(new Object[]{new ContactData().withFirstname("firstname 1").withLastname("lastname 1").withAddress("address 1").withEmail("email 1").withMobilePhone("mobile 1").withPhoto(photo)});
+        list.add(new Object[]{new ContactData().withFirstname("firstname 2").withLastname("lastname 2").withAddress("address 2").withEmail("email 2").withMobilePhone("mobile 2").withPhoto(photo)});
+        list.add(new Object[]{new ContactData().withFirstname("firstname 3").withLastname("lastname 3").withAddress("address 3").withEmail("email 3").withMobilePhone("mobile 3").withPhoto(photo)});
+        return list.iterator();
+    }
+
+
+    @Test(dataProvider = "validContacts")
+    public void testContactCreation(ContactData contact) throws Exception {
+        Contacts before = app.contact().all();
         app.goToContact().gotoContactPageEdit();
         app.contact().createContact(contact);
         app.delay(15);
