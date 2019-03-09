@@ -2,16 +2,14 @@ package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
-import first.train.addressbook.model.GroupData;
 import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -21,12 +19,17 @@ public class ContactCreationTest extends TestBase {
 
 
     @DataProvider
-    public Iterator<Object[]> validContacts() {
+    public Iterator<Object[]> validContacts() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
-        File photo = new File("src/test/resources/stru.png");
-        list.add(new Object[]{new ContactData().withFirstname("firstname 1").withLastname("lastname 1").withAddress("address 1").withEmail("email 1").withMobilePhone("mobile 1").withPhoto(photo)});
-        list.add(new Object[]{new ContactData().withFirstname("firstname 2").withLastname("lastname 2").withAddress("address 2").withEmail("email 2").withMobilePhone("mobile 2").withPhoto(photo)});
-        list.add(new Object[]{new ContactData().withFirstname("firstname 3").withLastname("lastname 3").withAddress("address 3").withEmail("email 3").withMobilePhone("mobile 3").withPhoto(photo)});
+       // File photo = new File("src/test/resources/stru.png");
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")));
+        String line = reader.readLine();
+        while(line != null){
+            String[] split = line.split(";");
+            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
+
+            line = reader.readLine();
+        }
         return list.iterator();
     }
 
