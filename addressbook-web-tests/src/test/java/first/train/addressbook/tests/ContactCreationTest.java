@@ -1,15 +1,15 @@
 package first.train.addressbook.tests;
 
+import com.thoughtworks.xstream.XStream;
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
-import org.hamcrest.MatcherAssert;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -22,15 +22,19 @@ public class ContactCreationTest extends TestBase {
     public Iterator<Object[]> validContacts() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
        // File photo = new File("src/test/resources/stru.png");
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")));
+        String xml = "";
         String line = reader.readLine();
         while(line != null){
-            String[] split = line.split(";");
-            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
-
+            xml += line;
+//            String[] split = line.split(";");
+//            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
             line = reader.readLine();
         }
-        return list.iterator();
+        XStream xstream = new XStream();
+        xstream.processAnnotations(ContactData.class);
+        List<ContactData> contacts = (List<ContactData>) xstream.fromXML(xml);
+        return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
 
 
