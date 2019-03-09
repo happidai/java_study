@@ -1,5 +1,7 @@
 package first.train.addressbook.tests;
 
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
@@ -37,8 +39,26 @@ public class ContactCreationTest extends TestBase {
         return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]> validContactsFromJson() throws IOException {
+        List<Object[]> list = new ArrayList<Object[]>();
+        // File photo = new File("src/test/resources/stru.png");
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")));
+        String json = "";
+        String line = reader.readLine();
+        while(line != null){
+            json += line;
+//            String[] split = line.split(";");
+//            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType());
+        return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
 
-    @Test(dataProvider = "validContacts")
+
+    @Test(dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) throws Exception {
         Contacts before = app.contact().all();
         app.goToContact().gotoContactPageEdit();
