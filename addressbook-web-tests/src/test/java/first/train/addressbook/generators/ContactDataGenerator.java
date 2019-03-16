@@ -31,17 +31,17 @@ public class ContactDataGenerator {
         ContactDataGenerator generator = new ContactDataGenerator();
         JCommander jCommander = new JCommander(generator);
         try {
-                jCommander.parse(args);
-    }catch(ParameterException ex){
+            jCommander.parse(args);
+        } catch (ParameterException ex) {
             jCommander.usage();
             return;
-             }
+        }
         generator.run();
 
 //        int count = Integer.parseInt(args[0]);
 //        File file = new File(args[1]);
 
-        }
+    }
 
     private void run() throws IOException {
         List<ContactData> contacts = generateContacts(count);
@@ -60,9 +60,9 @@ public class ContactDataGenerator {
 
         Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
         String json = gson.toJson(contacts);
-        Writer writer = new FileWriter(file);
-        writer.write(json);
-        writer.close();
+        try (Writer writer = new FileWriter(file)) {
+            writer.write(json);
+        }
     }
 
     private void saveAsXml(List<ContactData> contacts, File file) throws IOException {
@@ -70,26 +70,25 @@ public class ContactDataGenerator {
         XStream xStream = new XStream();
         xStream.processAnnotations(ContactData.class);
         String xml = xStream.toXML(contacts);
-        Writer writer = new FileWriter(file);
-        writer.write(xml);
-        writer.close();
+        try (Writer writer = new FileWriter(file)) {
+            writer.write(xml);
+        }
     }
 
     private void saveAsCsv(List<ContactData> contacts, File file) throws IOException {
-
-        Writer writer = new FileWriter(file);
-        for(ContactData contact : contacts) {
-            writer.write(String.format("%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(), contact.getAddress(),
-                    contact.getEmail(), contact.getMobilePhone()));
+        try (Writer writer = new FileWriter(file)) {
+            for (ContactData contact : contacts) {
+                writer.write(String.format("%s;%s;%s;%s;%s\n", contact.getFirstname(), contact.getLastname(), contact.getAddress(),
+                        contact.getEmail(), contact.getMobilePhone()));
+            }
         }
-        writer.close();
     }
 
     private List<ContactData> generateContacts(int count) {
         List<ContactData> contacts = new ArrayList<ContactData>();
-        for(int i = 0; i < count; i++){
+        for (int i = 0; i < count; i++) {
             contacts.add(new ContactData().withFirstname(String.format("firstname %s", i)).withLastname(String.format("lastname %s", i))
-            .withAddress(String.format("address %s", i)).withEmail(String.format("email %s", i)).withMobilePhone(String.format("mobile %s", i)));
+                    .withAddress(String.format("address %s", i)).withEmail(String.format("email %s", i)).withMobilePhone(String.format("mobile %s", i)));
         }
         return contacts;
     }

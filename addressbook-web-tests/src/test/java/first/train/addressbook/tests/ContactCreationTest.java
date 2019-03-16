@@ -23,38 +23,40 @@ public class ContactCreationTest extends TestBase {
     @DataProvider
     public Iterator<Object[]> validContacts() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
-       // File photo = new File("src/test/resources/stru.png");
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")));
-        String xml = "";
-        String line = reader.readLine();
-        while(line != null){
-            xml += line;
-//            String[] split = line.split(";");
-//            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
-            line = reader.readLine();
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.xml")))) {
+
+            String xml = "";
+            String line = reader.readLine();
+            while (line != null) {
+                xml += line;
+                line = reader.readLine();
+            }
+            XStream xstream = new XStream();
+            xstream.processAnnotations(ContactData.class);
+            List<ContactData> contacts = (List<ContactData>) xstream.fromXML(xml);
+            return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
         }
-        XStream xstream = new XStream();
-        xstream.processAnnotations(ContactData.class);
-        List<ContactData> contacts = (List<ContactData>) xstream.fromXML(xml);
-        return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+
     }
 
     @DataProvider
     public Iterator<Object[]> validContactsFromJson() throws IOException {
         List<Object[]> list = new ArrayList<Object[]>();
-        // File photo = new File("src/test/resources/stru.png");
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")));
-        String json = "";
-        String line = reader.readLine();
-        while(line != null){
-            json += line;
-//            String[] split = line.split(";");
-//            list.add(new Object[]{new ContactData().withFirstname(split[0]).withLastname(split[1]).withAddress(split[2]).withEmail(split[3]).withMobilePhone(split[4])});
-            line = reader.readLine();
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.json")))) {
+
+            String json = "";
+            String line = reader.readLine();
+            while (line != null) {
+                json += line;
+                line = reader.readLine();
+            }
+            Gson gson = new Gson();
+            List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>() {
+            }.getType());
+            return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+
         }
-        Gson gson = new Gson();
-        List<ContactData> contacts = gson.fromJson(json, new TypeToken<List<ContactData>>(){}.getType());
-        return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+
     }
 
 
@@ -67,7 +69,7 @@ public class ContactCreationTest extends TestBase {
         assertThat(app.contact().count(), equalTo(before.size() + 1));
         Contacts after = app.contact().all();
 
-      //  assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+        //  assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 
     }
 
@@ -97,17 +99,15 @@ public class ContactCreationTest extends TestBase {
     }
 
 
-
-
 //        int max = 0;
 //        for (ContactData c : after) {
 //            if (c.getId() > max) {
 //                max = c.getId();
 //            }
 //        }
-        //Comparator<? super ContactData> byId = (Comparator<ContactData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+    //Comparator<? super ContactData> byId = (Comparator<ContactData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
 
-      // contact.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
+    // contact.setId(after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId());
 //       before.add(contact);
 ////        Comparator<? super ContactData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
 ////        before.sort(byId);
