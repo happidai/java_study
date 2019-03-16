@@ -13,6 +13,9 @@ dependencies {
     implementation 'com.beust:jcommander:1.72'
     implementation 'com.thoughtworks.xstream:xstream:1.4.11.1'
     implementation 'org.immutables:gson:2.7.5'
+    implementation 'mysql:mysql-connector-java:8.0.15'
+    implementation 'org.avaje.composite:logback:1.1'
+    implementation 'org.hibernate:hibernate-core:5.4.1.Final'
 
 }
 
