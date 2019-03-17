@@ -1,0 +1,1137 @@
+485  [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+548  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+548  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+564  [Test worker] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+686  [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.1.Final}
+702  [Test worker] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+1034 [Test worker] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+1034 [Test worker] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+1034 [Test worker] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+1589 [Test worker] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+1636 [Test worker] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+1636 [Test worker] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+1705 [Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+1805 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@103f0f40
+1805 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@103f0f40
+1805 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@103f0f40
+1805 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1df64d5f
+1805 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2e1d6821
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@79c0b7b9
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@45b4f803
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@45b4f803
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@45b4f803
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1be5154e
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1be5154e
+1821 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1be5154e
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5855f95f
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@5855f95f
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5855f95f
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@55e65c5e
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@55e65c5e
+1890 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@55e65c5e
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@330f1a58
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@330f1a58
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@330f1a58
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6b08ae07
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6b08ae07
+1905 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6b08ae07
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@14009c73
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@14009c73
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@14009c73
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@621a535d
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@621a535d
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4969e333
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4969e333
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@803cf5c
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@803cf5c
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2835b9c6
+1921 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@39260abe
+1937 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6da7db30
+1937 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6da7db30
+1937 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@2bf956dc
+1937 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2bf956dc
+1952 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@6ed55043
+1952 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6ed55043
+1968 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@388aced0
+1968 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@388aced0
+1968 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@15075115
+1984 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@15075115
+1990 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@213d4d02
+1990 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@213d4d02
+2006 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@272e98ef
+2006 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@272e98ef
+2006 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3a117a6c
+2006 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3a117a6c
+2021 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@383a33d2
+2021 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@383a33d2
+2021 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@2fc27324
+2021 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@2fc27324
+2021 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@712bbef2
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@712bbef2
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7146071c
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7146071c
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7146071c
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7b278cc4
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@459a7655
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@459a7655
+2037 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@459a7655
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@20f77738
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@3dbd143b
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@3dbd143b
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@975d592
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@975d592
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@3f9b24ee
+2053 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3f9b24ee
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@b7ff61e
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@b7ff61e
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6904ca11
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6904ca11
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2478a8c3
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@47dec3dc
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@47dec3dc
+2068 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@47dec3dc
+2084 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1fd54a4b
+2084 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1fd54a4b
+2084 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1fd54a4b
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@c84482
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7bd4c02e
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@1082110e
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@1082110e
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@1082110e
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@20debdea
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@20debdea
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@20debdea
+2090 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7bb085b1
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@51e87049
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3be4682e
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3be4682e
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@61ceab37
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4e9002d1
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4e9002d1
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@3c30498a
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3c30498a
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@138f464a
+2106 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4d97b258
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@4e7488d4
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7d10dfad
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7d10dfad
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5ba6b314
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2030f27a
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@e12e4db
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@78606bad
+2122 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@16b049a6
+2137 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3134da28
+2137 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2819c4e9
+2137 [Test worker] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@535fef44
+2191 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2191 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2191 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2191 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2191 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2206 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2222 [Test worker] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2222 [Test worker] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2237 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/addressbook?serverTimezone=UTC]
+2237 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=}
+2237 [Test worker] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2253 [Test worker] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+2253 [Test worker] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+2592 [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.37-MariaDB
+      major : 5
+      minor : 5
+2592 [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+      major : 8
+      minor : 0
+2592 [Test worker] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+2607 [Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2639 [Test worker] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2654 [Test worker] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2739 [Test worker] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2739 [Test worker] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@bad2004] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@39680b20]
+2893 [Test worker] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: first.train.addressbook.model.GroupData
+2971 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2993 [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+3009 [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity first.train.addressbook.model.GroupData on table group_list
+3095 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+3105 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+3115 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:id]
+3124 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+3126 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+3136 [Test worker] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(group_id)]), id, assigned, , ...)
+3136 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+3136 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+3136 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:footer]
+3144 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+3146 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+3156 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+3156 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+3156 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:header]
+3166 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+3166 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+3166 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+3174 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+3174 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:name]
+3176 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+3176 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+3176 [Test worker] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: first.train.addressbook.model.ContactData
+3176 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+3176 [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ContactData
+3184 [Test worker] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity first.train.addressbook.model.ContactData on table addressbook
+3196 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=id, insertable=true, updatable=true, unique=false}
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+3196 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:id]
+3196 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+3196 [Test worker] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+3196 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=address, insertable=true, updatable=true, unique=false}
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property address with lazy=false
+3196 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:address]
+3196 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for address
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property address
+3196 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email, insertable=true, updatable=true, unique=false}
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+3196 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:email]
+3196 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+3196 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+3196 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:firstname]
+3196 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstname
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstname
+3196 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=home, insertable=true, updatable=true, unique=false}
+3196 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property homePhone with lazy=false
+3204 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:homePhone]
+3204 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for homePhone
+3204 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property homePhone
+3206 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=lastname, insertable=true, updatable=true, unique=false}
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastname with lazy=false
+3206 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:lastname]
+3206 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastname
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastname
+3206 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobilePhone with lazy=false
+3206 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:mobilePhone]
+3206 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for mobilePhone
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property mobilePhone
+3206 [Test worker] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=work, insertable=true, updatable=true, unique=false}
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property workPhone with lazy=false
+3206 [Test worker] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:workPhone]
+3206 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for workPhone
+3206 [Test worker] DEBUG o.h.cfg.annotations.PropertyBinder - Building property workPhone
+3217 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+3217 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+3217 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+3217 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+3217 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+3225 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for address
+3225 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+3227 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstname
+3227 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for homePhone
+3227 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastname
+3227 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for mobilePhone
+3227 [Test worker] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for workPhone
+3237 [Test worker] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+3237 [Test worker] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [addressbook]
+3328 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+3328 [Test worker] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+3328 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+3328 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+3336 [Test worker] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+3336 [Test worker] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+3336 [Test worker] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+3338 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+3346 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+3346 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+3348 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+3356 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : 
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : 
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : 
+3358 [Test worker] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : 
+3590 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+3598 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQLDialect, org.gradle.test.worker=2, java.class.path=C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\build\classes\java\test;C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\build\resources\test;C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\build\classes\java\main;C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\build\resources\main;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.testng\testng\7.0.0-beta3\39bf1670381caa8428edae2a0da710098f7f5540\testng-7.0.0-beta3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\3.141.59\e8e20b741299cb8ffedbd2925a3ab69d08b41063\selenium-java-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.72\6375e521c1e11d6563d4f25a07ce124ccf8cd171\jcommander-1.72.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.11.1\6c120c45a8c480bb2fea5b56502e3993ddd74fd2\xstream-1.4.11.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.immutables\gson\2.7.5\8923ad29f8660026c1967ca6cb0b812526e8ee4d\gson-2.7.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.avaje.composite\logback\1.1\8cd44ed61161c473f9a9725b2d8d978d395e576a\logback-1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.15\1cd928d0f1a93563993ce1d8b468217ea0d19b11\mysql-connector-java-8.0.15.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.4.1.Final\b08cf2177405f8065df907c15a2266157d8adbef\hibernate-core-5.4.1.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\3.141.59\67137314736c6a2f39a8aa59a562e9616ae5f77e\selenium-chrome-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\3.141.59\fc09c66f2d0b33b0816d770761ad1d599ef0df29\selenium-edge-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\3.141.59\a99f2fe2a42747ed9809d4f62f51a9e1b336dde8\selenium-firefox-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\3.141.59\677b9b414a3a9bb2aeea89042a7b326edeb13a82\selenium-ie-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\3.141.59\6b11ed01182bfd8bb62ddeae34cf9eadd3cfc7ff\selenium-opera-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\3.141.59\a32b5b88f46ea4b0356079f0d2e2217543923046\selenium-safari-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\3.141.59\8735de5049acf0e761defc65ee5837d6541abaf5\selenium-support-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\3.141.59\1c79ca890c312ff9916bd95df4f0c5182ec722d8\selenium-remote-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\3.141.59\e006ffd3aa7841e6e9125d9e6691b3a6b7592b05\selenium-api-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.9.5\38ceb06ae54ba0524d14a85fe84ed03aecef5078\byte-buddy-1.9.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\25.0-jre\7319c34fa5866a85b6bad445adad69d402323129\guava-25.0-jre.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.11.0\75966e05a49046ca2ae734e5626f28837a8d1e82\okhttp-3.11.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.14.0\102d7be47241d781ef95f1581d414b0943053130\okio-1.14.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\jcl-over-slf4j\1.7.25\f8c32b13ff142a513eeb5b6330b1588dcb2c0461\jcl-over-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\log4j-over-slf4j\1.7.25\a87bb47468f47ee7aabbd54f93e133d4215769c3\log4j-over-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.6.1\d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924\protobuf-java-3.6.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.1.0.Final\700aeedc4a2089816621948f0379e17cbd17d5db\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.24.0-GA\d7466fc2e3af7c023e95c510f06448ad29b225b3\javassist-3.24.0-GA.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\a8485cab9484dda36e9a8c319e76b5cc18797b58\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.5.Final\7060f67764565b9ee9d467e3ed0cb8a9c601b23a\jandex-2.0.5.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.1\dd6dda9da676a54c5b36ca2806ff95ee017d8738\jaxb-runtime-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.3.1\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\jaxb-api-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.1\3dce5dbb3571aa820c677fadd8349bfa8f00c199\dom4j-2.1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-compat-qual\2.0.0\fc89b03860d11d6213d0154a62bcd1c2f69b9efa\checker-compat-qual-2.0.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.1.3\39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\error_prone_annotations-2.1.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.14\775b7e22fb10026eed3f86e8dc556dfafe35f2d5\animal-sniffer-annotations-1.14.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.1\a09d2c48d3285f206fafbffe0e50619284e92126\txw2-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.7\c197c86ceec7318b1284bffb49b54226ca774003\istack-commons-runtime-3.0.7.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8\8cc35f73da321c29973191f2cf143d29d26a1df7\stax-ex-1.8.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.15\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\FastInfoset-1.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=validate, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_201\jre\bin, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2', sun.cpu.endian=little, user.home=C:\Users\happi, user.language=en, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, org.gradle.native=false, java.home=C:\Program Files\Java\jdk1.8.0_201\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_201-b09, user.name=happi, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost/addressbook?serverTimezone=UTC, connection.pool_size=1, file.encoding=windows-1251, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\tmp\o\, java.version=1.8.0_201, user.dir=C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@623fe8ad, java.library.path=C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\\bin;C:\Windows\System32\geckodriver;C:\Users\happi\AppData\Local\Microsoft\WindowsApps;C:\Users\happi\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.201-b09, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost/addressbook?serverTimezone=UTC, java.class.version=52.0}
+3641 [Test worker] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+3641 [Test worker] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+3641 [Test worker] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@bad2004] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@3ba3b99b]
+3843 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.GroupData] is safe
+3843 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.GroupData
+3924 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.GroupData] is safe
+3924 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.GroupData
+4834 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.ContactData] is safe
+4834 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.ContactData
+4834 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.ContactData] is safe
+4834 [Test worker] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.ContactData
+4933 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: first.train.addressbook.model.GroupData
+4933 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+4935 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_1_, groupdata_.group_header as group_he3_1_, groupdata_.group_name as group_na4_1_ from group_list groupdata_ where groupdata_.group_id=?
+4935 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+4935 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+4935 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+5014 [Test worker] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7024eb73]
+5016 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+5016 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+5016 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+5016 [Test worker] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+5056 [Test worker] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+5066 [Test worker] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+5076 [Test worker] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+5076 [Test worker] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14634d3b]
+5076 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+5076 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+5076 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+5076 [Test worker] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+5076 [Test worker] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+5076 [Test worker] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+5076 [Test worker] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.GroupData [READ]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+5115 [Test worker] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity first.train.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+5115 [Test worker] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity first.train.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: first.train.addressbook.model.ContactData
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from addressbook where id =?
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select contactdat_.id, contactdat_.address as address2_0_, contactdat_.email as email3_0_, contactdat_.firstname as firstnam4_0_, contactdat_.home as home5_0_, contactdat_.lastname as lastname6_0_, contactdat_.mobile as mobile7_0_, contactdat_.work as work8_0_ from addressbook contactdat_ where contactdat_.id=?
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into addressbook (address, email, firstname, home, lastname, mobile, work, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update addressbook set address=?, email=?, firstname=?, home=?, lastname=?, mobile=?, work=? where id=?
+5115 [Test worker] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from addressbook where id=?
+5115 [Test worker] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5fd0e224]
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+5115 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+5115 [Test worker] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+5115 [Test worker] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+5125 [Test worker] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+5125 [Test worker] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.ContactData [NONE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+5125 [Test worker] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3fb77882]
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+5125 [Test worker] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+5125 [Test worker] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+5125 [Test worker] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+5125 [Test worker] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+5125 [Test worker] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.ContactData [READ]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+5125 [Test worker] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity first.train.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+5125 [Test worker] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity first.train.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+5241 [Test worker] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b530de8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+5426 [Test worker] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+5426 [Test worker] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+5441 [Test worker] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5441 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5441 [Test worker] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+5441 [Test worker] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+5441 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1320bc25
+5457 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 1be24c61-0c74-4a81-ad7e-2a18a984bb5e (<unnamed>)
+5457 [Test worker] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+13559 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testBadContactCreation with parameters[]
+23373 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testBadContactCreation
+23628 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testContactCreation with parameters[ContactData{id='2147483647', firstname='firstname 0', lastname='lastname 0'}]
+23919 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+23951 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23951 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+24022 [Test worker] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@40db1d58
+24133 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from first.train.addressbook.model.ContactData where deprecated = '0000-00-00'
+24151 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+24174 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[DOT] Node: '.'
+    |           |  |  |  +-[IDENT] Node: 'first'
+    |           |  |  |  \-[IDENT] Node: 'train'
+    |           |  |  \-[IDENT] Node: 'addressbook'
+    |           |  \-[IDENT] Node: 'model'
+    |           \-[IDENT] Node: 'ContactData'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'deprecated'
+          \-[QUOTED_STRING] Node: ''0000-00-00''
+
+24254 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+24319 [Test worker] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : first.train.addressbook.model.ContactData (<no alias>) -> contactdat0_
+24343 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+24344 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} addressbook contactdat0_ ) ( where ( = deprecated '0000-00-00' ) ) )
+24372 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+24386 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [addressbook contactdat0_]
+24386 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+24386 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (addressbook)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'contactdat0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=first.train.addressbook.model.ContactData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[contactdat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'addressbook contactdat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=first.train.addressbook.model.ContactData}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[IDENT] IdentNode: 'deprecated' {originalText=deprecated}
+          \-[QUOTED_STRING] LiteralNode: ''0000-00-00''
+
+24386 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+24414 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from first.train.addressbook.model.ContactData where deprecated = '0000-00-00'
+24414 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+24414 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+24446 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+24497 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+24507 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+24527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+24527 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+24527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+24527 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+24527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+24535 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+24535 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+24535 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+24537 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+24537 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+24537 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+24537 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+24545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+24547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+24547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+24547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+24556 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+24556 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+24558 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+24566 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+24568 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+24568 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+24578 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+24588 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 7 objects
+24588 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+24588 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+24596 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+24598 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+24598 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+30399 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+30399 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+30401 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+30405 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+30405 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+30406 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+30406 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+30407 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+30407 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+30407 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+30408 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+30408 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+30408 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+30409 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+30409 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+30410 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+30411 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+30411 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+30412 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+30412 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+30412 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+30412 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+30413 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+30413 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+30413 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+30414 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+30414 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+30414 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+30415 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+30415 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+30415 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+30415 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+30416 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+30416 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+30416 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+30417 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+30417 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+30417 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+30418 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 8 objects
+30418 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+30418 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+30419 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+30419 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+30419 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+30420 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+30420 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+30420 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+30420 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+30420 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+30424 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+30424 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+30424 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testContactCreation
+30424 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testContactCreation with parameters[ContactData{id='2147483647', firstname='firstname 1', lastname='lastname 1'}]
+30424 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+30424 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+30424 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+30424 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+30440 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+30440 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+30440 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+30440 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+30440 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+30440 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 8 objects
+30440 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+30440 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+30440 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+30440 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+32595 [Hibernate Connection Pool Validation Thread] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Connection pool now considered primed; min-size will be maintained
+36161 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+36161 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+36163 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+36167 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+36168 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+36169 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+36169 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+36170 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+36170 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+36170 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+36171 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+36171 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+36171 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+36172 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+36172 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+36173 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+36173 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+36173 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+36173 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+36174 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+36174 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+36174 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+36175 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+36175 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+36175 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+36175 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+36176 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+36176 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+36176 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+36176 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+36177 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+36177 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+36177 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+36177 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+36178 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+36178 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+36178 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+36178 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+36179 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+36179 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+36180 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+36180 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+36181 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+36181 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+36181 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+36182 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+36182 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+36182 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+36182 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+36183 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+36183 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+36183 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+36183 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+36183 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+36187 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+36187 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+36187 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testContactCreation
+36187 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testContactCreation with parameters[ContactData{id='2147483647', firstname='firstname 2', lastname='lastname 2'}]
+36187 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+36187 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+36187 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+36187 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+36187 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+36203 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+36203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+36203 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+36203 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+36203 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+36203 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+36203 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+36203 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+36217 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+36217 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+36217 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41705 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+41706 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+41707 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+41711 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+41711 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+41711 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+41712 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+41713 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+41713 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+41713 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+41714 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+41715 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+41715 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+41715 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+41715 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+41716 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+41716 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+41717 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+41717 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+41717 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+41717 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+41718 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+41718 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+41718 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+41719 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+41719 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+41719 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+41719 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+41719 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+41720 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+41720 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+41720 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+41720 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+41720 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+41721 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+41722 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+41722 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+41722 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+41722 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+41723 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+41723 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+41724 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+41724 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+41727 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+41727 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+41727 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+41728 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+41728 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+41728 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=lastname 2}
+41728 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+41728 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+41732 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+41732 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+41733 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+41735 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41736 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41738 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testContactCreation
+41744 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testContactModification with parameters[]
+41778 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+41778 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+41778 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+41778 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+41794 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+41794 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+41794 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+41794 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+41794 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+41794 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+41794 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+41794 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+41794 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+41794 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=lastname 2}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+41794 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+41794 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41794 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41822 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+41822 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+41822 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+41822 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+41838 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+41838 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+41838 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+41838 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+41838 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+41838 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+41838 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=lastname 2}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+41838 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+41838 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+41838 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46821 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+46821 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+46823 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+46829 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+46829 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+46829 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+46829 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+46829 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+46829 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+46829 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=Zhivotovskaia}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+46829 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+46829 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46845 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46845 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testContactModification
+46845 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testContactDeletion with parameters[]
+46860 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+46860 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+46876 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+46876 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+46876 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+46876 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+46876 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+46876 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+46876 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+46876 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+46876 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+46876 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+46876 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+46876 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+46876 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=Zhivotovskaia}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+46891 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+46891 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46891 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46891 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+46891 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+46891 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+46891 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#198]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#198]
+46907 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#198]
+46907 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+46907 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+46907 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+46907 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 10 objects
+46907 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=198, email=email 2, lastname=Zhivotovskaia}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+46907 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+46907 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+46907 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+50823 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+50824 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+50824 [Test worker] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.firstname as firstnam4_0_, contactdat0_.home as home5_0_, contactdat0_.lastname as lastname6_0_, contactdat0_.mobile as mobile7_0_, contactdat0_.work as work8_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#186]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#188]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#190]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#191]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#192]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#193]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#194]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#196]
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+50827 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.ContactData#197]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#186]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#186]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#188]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#188]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#190]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#190]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#191]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#191]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#192]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#192]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#193]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#193]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#194]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#194]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#196]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#196]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.ContactData#197]
+50827 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.ContactData#197]
+50827 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+50827 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+50827 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+50827 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 9 objects
+50827 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=194, email=email 1, lastname=lastname 1}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=193, email=email 0, lastname=lastname 0}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 2, address=address 2, mobilePhone=mobile 2, homePhone=, workPhone=, id=192, email=email 2, lastname=lastname 2}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=191, email=email 1, lastname=Zhivotovskaia}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=197, email=email 1, lastname=lastname 1}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=196, email=email 0, lastname=lastname 0}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=Olga, address=St. Petersburg, mobilePhone=222, homePhone=, workPhone=, id=186, email=happidai@gmail.com, lastname=Zhivotovskaia}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 0, address=address 0, mobilePhone=mobile 0, homePhone=, workPhone=, id=190, email=email 0, lastname=lastname 0}
+50827 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.ContactData{firstname=firstname 1, address=address 1, mobilePhone=mobile 1, homePhone=, workPhone=, id=188, email=email 1, lastname=lastname 1}
+50827 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+50827 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+50827 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testContactDeletion

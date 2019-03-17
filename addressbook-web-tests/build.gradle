@@ -13,41 +13,41 @@ dependencies {
     implementation 'com.beust:jcommander:1.72'
     implementation 'com.thoughtworks.xstream:xstream:1.4.11.1'
     implementation 'org.immutables:gson:2.7.5'
-    implementation 'mysql:mysql-connector-java:8.0.15'
     implementation 'org.avaje.composite:logback:1.1'
+    implementation 'mysql:mysql-connector-java:8.0.15'
     implementation 'org.hibernate:hibernate-core:5.4.1.Final'
 
 }
 
-  task  testGroups(type : Test){
-        useTestNG{
-            suites 'src/test/resources/testng-groups.xml'
-        }
-      if(project.hasProperty('browser')) {
-          systemProperty 'browser', "${browser}"
-      }
-      if(project.hasProperty('target')) {
-          systemProperty 'target', "${target}"
-      }
-      if(project.hasProperty('verifyUI')) {
-          systemProperty 'verifyUI', "${verifyUI}"
-      }
+task testGroups(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/testng-groups.xml'
     }
+    if (project.hasProperty('browser')) {
+        systemProperty "browser", "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
+    }
+}
 
-    task  testContacts(type : Test){
-        useTestNG{
-            suites 'src/test/resources/testng-contacts.xml'
-        }
-        if(project.hasProperty('browser')) {
-            systemProperty 'browser', "${browser}"
-        }
-        if(project.hasProperty('target')) {
-            systemProperty 'target', "${target}"
-        }
-        if(project.hasProperty('verifyUI')) {
-            systemProperty 'verifyUI', "${verifyUI}"
-        }
+task testContacts(type: Test) {
+    useTestNG {
+        suites 'src/test/resources/testng-contacts.xml'
     }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+    if (project.hasProperty('verifyUI')) {
+        systemProperty 'verifyUI', "${verifyUI}"
+    }
+}
 
 
 

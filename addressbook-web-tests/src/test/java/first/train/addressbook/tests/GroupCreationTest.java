@@ -6,6 +6,8 @@ import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 import first.train.addressbook.model.GroupData;
 import first.train.addressbook.model.Groups;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.*;
 
 import java.io.*;
@@ -17,6 +19,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 
 public class GroupCreationTest extends TestBase {
+
+
 
     @DataProvider
     public Iterator<Object[]> validGroups() throws IOException {
@@ -59,6 +63,7 @@ public class GroupCreationTest extends TestBase {
 
     @Test(dataProvider = "validGroupsFromJson")
     public void testGroupCreation(GroupData group) throws Exception {
+
         app.goTo().groupPage();
         Groups before = app.db().groups();
         app.group().create(group);
@@ -66,6 +71,8 @@ public class GroupCreationTest extends TestBase {
         Groups after = app.db().groups();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+        verifyGroupListInUi();
+
     }
 
 

@@ -40,6 +40,7 @@ public class GroupDeletionTest extends TestBase {
         before.remove(deletedGroup);
         assertThat(after, equalTo(before.without(deletedGroup)));
         Assert.assertEquals(before, after);
+        verifyGroupListInUi();
 
     }
 

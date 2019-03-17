@@ -1,0 +1,1061 @@
+724  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+802  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+802  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+824  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+1125 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.1.Final}
+1125 [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+1832 [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+1832 [main] DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+1847 [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2992 [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+3045 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+3061 [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+3108 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+3246 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@198d6542
+3246 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@198d6542
+3246 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@198d6542
+3246 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2931522b
+3246 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@662706a7
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@327af41b
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@30bce90b
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@30bce90b
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@30bce90b
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@3406472c
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@3406472c
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3406472c
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@40317ba2
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@40317ba2
+3261 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@40317ba2
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@b978d10
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@b978d10
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@b978d10
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@147a5d08
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@147a5d08
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@147a5d08
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b45c0e
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1b45c0e
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1b45c0e
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4416d64f
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4416d64f
+3277 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4416d64f
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6ee4d9ab
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6ee4d9ab
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@13d4992d
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@13d4992d
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@9573584
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@9573584
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@63eef88a
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@352c1b98
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@48d61b48
+3292 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@48d61b48
+3308 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@176b75f7
+3308 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@176b75f7
+3330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@479ceda0
+3330 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@479ceda0
+3346 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@38ba6ce3
+3346 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@38ba6ce3
+3346 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7fbdb894
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7fbdb894
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@436c81a3
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@436c81a3
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@609db546
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@609db546
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@341814d3
+3362 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@341814d3
+3377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59e505b2
+3377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59e505b2
+3377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@74a6f9c1
+3377 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@74a6f9c1
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2d778add
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2d778add
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@f107c50
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@f107c50
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@f107c50
+3393 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4241e0f4
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@38604b81
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@38604b81
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@38604b81
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@babafc2
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@69f1a286
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@69f1a286
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@3f57bcad
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3f57bcad
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@36a5cabc
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@36a5cabc
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@181e731e
+3408 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@181e731e
+3424 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@17d88132
+3424 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@17d88132
+3424 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5ef5c734
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3697186
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3697186
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3697186
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@46b61c56
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@46b61c56
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@46b61c56
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@12d2ce03
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1f53a5dc
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@c7ba306
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@c7ba306
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@c7ba306
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6c4980d3
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6c4980d3
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6c4980d3
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@74bf1791
+3431 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@1339e7aa
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@479460a6
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@479460a6
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5be46f9d
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@338c99c8
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@338c99c8
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@1fa1cab1
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1fa1cab1
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@51fadaff
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5b6ec132
+3446 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@7a67e3c6
+3462 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@558bdf1f
+3462 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@558bdf1f
+3462 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@67545b57
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6c2c1385
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5f354bcf
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3daf7722
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@78641d23
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@74589991
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@146dfe6
+3477 [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4716be8b
+3547 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+3547 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+3562 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+3578 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+3593 [main] WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+3609 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost/addressbook?serverTimezone=UTC]
+3609 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=}
+3609 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+3625 [main] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+3625 [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+4178 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.37-MariaDB
+      major : 5
+      minor : 5
+4178 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)
+      major : 8
+      minor : 0
+4178 [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+4218 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+4277 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+4289 [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+4388 [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+4398 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@a8c1f44] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@150ab4ed]
+4545 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: first.train.addressbook.model.GroupData
+4599 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+4614 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+4614 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity first.train.addressbook.model.GroupData on table group_list
+4677 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+4699 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+4699 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:id]
+4699 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+4699 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+4714 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(group_id)]), id, assigned, , ...)
+4714 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+4714 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:footer]
+4714 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+4714 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+4714 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:header]
+4714 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+4714 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+4714 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.GroupData:name]
+4714 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+4714 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+4730 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: first.train.addressbook.model.ContactData
+4730 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+4730 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ContactData
+4730 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity first.train.addressbook.model.ContactData on table addressbook
+4730 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=id, insertable=true, updatable=true, unique=false}
+4730 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+4730 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:id]
+4730 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+4730 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+4746 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=address, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property address with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:address]
+4746 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for address
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property address
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:email]
+4746 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:firstname]
+4746 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstname
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstname
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=home, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property homePhone with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:homePhone]
+4746 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for homePhone
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property homePhone
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=lastname, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastname with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:lastname]
+4746 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastname
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastname
+4746 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+4746 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobilePhone with lazy=false
+4746 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:mobilePhone]
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for mobilePhone
+4761 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property mobilePhone
+4761 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=work, insertable=true, updatable=true, unique=false}
+4761 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property workPhone with lazy=false
+4761 [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [first.train.addressbook.model.ContactData:workPhone]
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for workPhone
+4761 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property workPhone
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for address
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstname
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for homePhone
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastname
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for mobilePhone
+4761 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for workPhone
+4761 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+4761 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [addressbook]
+4862 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+4862 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+4862 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+4862 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+4862 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+4862 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+4862 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+4862 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+4862 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+4862 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+4862 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+4862 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+4862 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+4862 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+4862 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+4862 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : 
+4862 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : 
+4862 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : 
+4877 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : 
+5285 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+5285 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\plugins\testng\lib\testng-plugin.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\out\test\classes;C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests\out\test\resources;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.testng\testng\7.0.0-beta3\39bf1670381caa8428edae2a0da710098f7f5540\testng-7.0.0-beta3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\3.141.59\e8e20b741299cb8ffedbd2925a3ab69d08b41063\selenium-java-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.72\6375e521c1e11d6563d4f25a07ce124ccf8cd171\jcommander-1.72.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.11.1\6c120c45a8c480bb2fea5b56502e3993ddd74fd2\xstream-1.4.11.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.immutables\gson\2.7.5\8923ad29f8660026c1967ca6cb0b812526e8ee4d\gson-2.7.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.avaje.composite\logback\1.1\8cd44ed61161c473f9a9725b2d8d978d395e576a\logback-1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.15\1cd928d0f1a93563993ce1d8b468217ea0d19b11\mysql-connector-java-8.0.15.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.4.1.Final\b08cf2177405f8065df907c15a2266157d8adbef\hibernate-core-5.4.1.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\3.141.59\67137314736c6a2f39a8aa59a562e9616ae5f77e\selenium-chrome-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\3.141.59\fc09c66f2d0b33b0816d770761ad1d599ef0df29\selenium-edge-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\3.141.59\a99f2fe2a42747ed9809d4f62f51a9e1b336dde8\selenium-firefox-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\3.141.59\677b9b414a3a9bb2aeea89042a7b326edeb13a82\selenium-ie-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\3.141.59\6b11ed01182bfd8bb62ddeae34cf9eadd3cfc7ff\selenium-opera-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\3.141.59\a32b5b88f46ea4b0356079f0d2e2217543923046\selenium-safari-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\3.141.59\8735de5049acf0e761defc65ee5837d6541abaf5\selenium-support-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\3.141.59\1c79ca890c312ff9916bd95df4f0c5182ec722d8\selenium-remote-driver-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\3.141.59\e006ffd3aa7841e6e9125d9e6691b3a6b7592b05\selenium-api-3.141.59.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.9.5\38ceb06ae54ba0524d14a85fe84ed03aecef5078\byte-buddy-1.9.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\25.0-jre\7319c34fa5866a85b6bad445adad69d402323129\guava-25.0-jre.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.11.0\75966e05a49046ca2ae734e5626f28837a8d1e82\okhttp-3.11.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.14.0\102d7be47241d781ef95f1581d414b0943053130\okio-1.14.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.25\af5364cd6679bfffb114f0dec8a157aaa283b76\jul-to-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\jcl-over-slf4j\1.7.25\f8c32b13ff142a513eeb5b6330b1588dcb2c0461\jcl-over-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\log4j-over-slf4j\1.7.25\a87bb47468f47ee7aabbd54f93e133d4215769c3\log4j-over-slf4j-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.5\f645ed69d595b24d4cf8b3fbb64cc505bede8829\gson-2.8.5.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.6.1\d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924\protobuf-java-3.6.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.1.0.Final\700aeedc4a2089816621948f0379e17cbd17d5db\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.24.0-GA\d7466fc2e3af7c023e95c510f06448ad29b225b3\javassist-3.24.0-GA.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\a8485cab9484dda36e9a8c319e76b5cc18797b58\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.5.Final\7060f67764565b9ee9d467e3ed0cb8a9c601b23a\jandex-2.0.5.Final.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.1\dd6dda9da676a54c5b36ca2806ff95ee017d8738\jaxb-runtime-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.3.1\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\jaxb-api-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.1\3dce5dbb3571aa820c677fadd8349bfa8f00c199\dom4j-2.1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-compat-qual\2.0.0\fc89b03860d11d6213d0154a62bcd1c2f69b9efa\checker-compat-qual-2.0.0.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.1.3\39b109f2cd352b2d71b52a3b5a1a9850e1dc304b\error_prone_annotations-2.1.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.14\775b7e22fb10026eed3f86e8dc556dfafe35f2d5\animal-sniffer-annotations-1.14.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.1\a09d2c48d3285f206fafbffe0e50619284e92126\txw2-2.3.1.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.7\c197c86ceec7318b1284bffb49b54226ca774003\istack-commons-runtime-3.0.7.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8\8cc35f73da321c29973191f2cf143d29d26a1df7\stax-ex-1.8.jar;C:\Users\happi\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.15\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\FastInfoset-1.2.15.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\plugins\testng\lib\jcommander.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, hbm2ddl.auto=validate, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Moscow, user.country.format=RU, os.name=Windows 10, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_201\jre\bin, sun.java.command=org.testng.RemoteTestNGStarter -usedefaultlisteners false -socket13376 @w@C:\tmp\o\idea_working_dirs_testng.tmp -temp C:\tmp\o\idea_testng.tmp, sun.cpu.endian=little, user.home=C:\Users\happi, user.language=en, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, java.home=C:\Program Files\Java\jdk1.8.0_201\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCacheProvider, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_201-b09, user.name=happi, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost/addressbook?serverTimezone=UTC, connection.pool_size=1, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\tmp\o\, java.version=1.8.0_201, user.dir=C:\Users\happi\OneDrive\Documents\GitHub\java_study\addressbook-web-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, user.language.format=ru, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@e362c57, java.library.path=C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\\bin;C:\Windows\System32\geckodriver;C:\Users\happi\AppData\Local\Microsoft\WindowsApps;C:\Users\happi\AppData\Local\GitHubDesktop\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.201-b09, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost/addressbook?serverTimezone=UTC, java.class.version=52.0}
+5333 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+5335 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+5335 [main] DEBUG o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@a8c1f44] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@9257031]
+5497 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.GroupData] is safe
+5497 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.GroupData
+5588 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.GroupData] is safe
+5588 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.GroupData
+6457 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.ContactData] is safe
+6457 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.ContactData
+6457 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [first.train.addressbook.model.ContactData] is safe
+6457 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : first.train.addressbook.model.ContactData
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: first.train.addressbook.model.GroupData
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_1_, groupdata_.group_header as group_he3_1_, groupdata_.group_name as group_na4_1_ from group_list groupdata_ where groupdata_.group_id=?
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+6548 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+6601 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1436a7ab]
+6601 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+6601 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+6601 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+6601 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+6648 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+6648 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+6664 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+6664 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73044cdf]
+6664 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+6664 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+6664 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+6664 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+6664 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+6664 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+6664 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.GroupData [READ]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+6702 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity first.train.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+6702 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity first.train.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: first.train.addressbook.model.ContactData
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from addressbook where id =?
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select contactdat_.id, contactdat_.address as address2_0_, contactdat_.email as email3_0_, contactdat_.firstname as firstnam4_0_, contactdat_.home as home5_0_, contactdat_.lastname as lastname6_0_, contactdat_.mobile as mobile7_0_, contactdat_.work as work8_0_ from addressbook contactdat_ where contactdat_.id=?
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into addressbook (address, email, firstname, home, lastname, mobile, work, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update addressbook set address=?, email=?, firstname=?, home=?, lastname=?, mobile=?, work=? where id=?
+6702 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from addressbook where id=?
+6702 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27b000f7]
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+6702 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+6717 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+6717 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+6717 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+6717 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.ContactData [NONE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+6717 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64bfd6fd]
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+6717 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+6717 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+6717 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+6717 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=first.train.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=first.train.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=first.train.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=first.train.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+6717 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity first.train.addressbook.model.ContactData [READ]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+6717 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity first.train.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+6717 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity first.train.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.firstname as firstnam4_0_0_, contactdat0_.home as home5_0_0_, contactdat0_.lastname as lastname6_0_0_, contactdat0_.mobile as mobile7_0_0_, contactdat0_.work as work8_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+6849 [main] INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5411dd90] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+7034 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+7034 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+7049 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7049 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7049 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+7049 [main] DEBUG o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+7065 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@48284d0e
+7065 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 6f23a343-eed0-426f-9552-d9e313f3eff1 (<unnamed>)
+7065 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+17990 [main] INFO  f.t.a.tests.GroupCreationTest - Start test testGroupCreation
+18591 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+18622 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+18622 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+18644 [main] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@d2291de
+18711 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from first.train.addressbook.model.GroupData
+18729 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18747 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'first'
+                |  |  |  \-[IDENT] Node: 'train'
+                |  |  \-[IDENT] Node: 'addressbook'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+18794 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+18822 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : first.train.addressbook.model.GroupData (<no alias>) -> groupdata0_
+18823 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+18824 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+18838 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+18852 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+18852 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+18853 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_1_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=first.train.addressbook.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=first.train.addressbook.model.GroupData}}
+
+18853 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18860 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from first.train.addressbook.model.GroupData
+18860 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+18860 [main] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+18891 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+18923 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+18945 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+18961 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+18961 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+18977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+18977 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+18977 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+18977 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+18992 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+18992 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+18992 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+18992 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+18992 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+18992 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+18992 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+18992 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+19008 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 17 objects
+19008 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+19008 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+19008 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+19008 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+21066 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+21067 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+21069 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+21071 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+21072 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+21072 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+21073 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+21073 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+21073 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+21073 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+21073 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+21073 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+21074 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+21074 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+21074 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+21074 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+21074 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+21074 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+21075 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+21075 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+21075 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+21075 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+21075 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+21075 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+21076 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+21076 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+21076 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+21076 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+21076 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+21076 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+21077 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+21077 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+21077 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+21078 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+21078 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+21078 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+21078 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+21078 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+21079 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#37]
+21079 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+21079 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+21079 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+21080 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+21081 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+21081 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+21081 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+21081 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+21081 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+21082 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+21082 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+21082 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+21082 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+21082 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+21083 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+21084 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+21084 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+21084 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+21084 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+21084 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+21085 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+21085 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+21085 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#37]
+21085 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#37]
+21086 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+21086 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+21086 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+21089 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 18 objects
+21089 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+21090 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=37}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+21091 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+21092 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+21094 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+21095 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+21100 [main] INFO  f.t.a.tests.GroupCreationTest - Stop test testGroupCreation
+21105 [main] INFO  f.t.a.tests.GroupCreationTest - Start test testGroupCreation
+21451 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+21452 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+21454 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+21457 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+21458 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+21458 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+21458 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+21459 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+21459 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+21459 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+21460 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+21460 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+21460 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+21461 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+21461 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+21461 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+21462 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+21462 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+21462 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+21462 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+21463 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+21463 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+21463 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+21463 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+21464 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+21464 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+21464 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+21464 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+21465 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+21465 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+21465 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+21465 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+21465 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+21465 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+21465 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+21466 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+21466 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+21466 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+21466 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#37]
+21466 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+21466 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+21467 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+21468 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+21469 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+21470 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+21471 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+21471 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+21471 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+21471 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#37]
+21471 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#37]
+21471 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+21472 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+21472 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+21474 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 18 objects
+21474 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+21474 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+21474 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+21474 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=37}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+21475 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+21476 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+21477 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+21478 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23709 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+23709 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+23717 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+23717 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+23717 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+23727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+23727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+23727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+23727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+23727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+23727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+23727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#37]
+23727 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+23727 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#38]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#37]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#37]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#38]
+23727 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#38]
+23727 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+23727 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+23727 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+23727 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 19 objects
+23727 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+23727 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=37}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=38}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+23742 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+23742 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23742 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+23742 [main] INFO  f.t.a.tests.GroupCreationTest - Stop test testGroupCreation
+23742 [main] INFO  f.t.a.tests.GroupCreationTest - Start test testGroupCreation
+24202 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+24203 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+24206 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+24209 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+24209 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+24210 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+24210 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+24210 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+24210 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+24210 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+24211 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+24211 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+24211 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+24211 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+24211 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+24211 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+24212 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+24212 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+24212 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+24212 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+24212 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+24213 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+24213 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+24213 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+24213 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+24213 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+24213 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+24214 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+24214 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+24214 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+24214 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+24214 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+24215 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+24215 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+24215 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+24215 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+24215 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+24216 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+24216 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#37]
+24216 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+24216 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#38]
+24216 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+24217 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+24218 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+24222 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+24222 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+24222 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+24222 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+24223 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+24224 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+24225 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+24225 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#37]
+24225 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#37]
+24225 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#38]
+24225 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#38]
+24226 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+24226 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+24226 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+24227 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 19 objects
+24227 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+24227 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+24228 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+24228 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+24228 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+24228 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+24235 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+24235 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+24235 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+24235 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+24235 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=37}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=38}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+24236 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+24237 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+24238 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+24239 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+26308 [main] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+26309 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+26311 [main] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+26314 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+26314 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#17]
+26315 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+26315 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#20]
+26315 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+26316 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#22]
+26316 [main] DEBUG org.hibernate.loader.Loader - Result set row: 3
+26316 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#23]
+26316 [main] DEBUG org.hibernate.loader.Loader - Result set row: 4
+26316 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#24]
+26317 [main] DEBUG org.hibernate.loader.Loader - Result set row: 5
+26317 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#25]
+26317 [main] DEBUG org.hibernate.loader.Loader - Result set row: 6
+26317 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#26]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 7
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#27]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 8
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#28]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 9
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#29]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 10
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#30]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 11
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#31]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 12
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#32]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 13
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#33]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 14
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#34]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 15
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#35]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 16
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#36]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 17
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#37]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 18
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#38]
+26319 [main] DEBUG org.hibernate.loader.Loader - Result set row: 19
+26319 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#39]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#17]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#17]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#20]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#20]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#22]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#22]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#23]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#23]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#24]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#24]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#25]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#25]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#26]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#26]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#27]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#27]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#28]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#28]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#29]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#29]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#30]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#30]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#31]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#31]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#32]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#32]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#33]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#33]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#34]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#34]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#35]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#35]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#36]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#36]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#37]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#37]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#38]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#38]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#39]
+26319 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#39]
+26319 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+26319 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+26319 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+26335 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 20 objects
+26335 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=33}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=32}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=35}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=34}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=29}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=28}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=31}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=30}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=37}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=36}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=39}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=38}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=17}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=25}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=24}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=27}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=26}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=20}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=23}
+26335 [main] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=22}
+26335 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+26350 [main] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+26350 [main] INFO  f.t.a.tests.GroupCreationTest - Stop test testGroupCreation

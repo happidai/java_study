@@ -1,12 +1,11 @@
 package first.train.addressbook.model;
-
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
 
 @XStreamAlias("contact")
@@ -55,6 +54,7 @@ public class ContactData {
     @Expose
     @Transient
     private String email2;
+
 
     @Override
     public boolean equals(Object o) {
@@ -246,4 +246,8 @@ private File photo;
     }
 
 
+
+
+
 }
+
