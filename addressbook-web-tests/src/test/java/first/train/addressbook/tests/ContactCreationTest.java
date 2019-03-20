@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
+import first.train.addressbook.model.Groups;
 import org.testng.annotations.*;
 
 import java.io.*;
@@ -62,9 +63,10 @@ public class ContactCreationTest extends TestBase {
 
     @Test(dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) throws Exception {
+        Groups groups = app.db().groups();
         Contacts before = app.db().contacts();
         app.goToContact().gotoContactPageEdit();
-        app.contact().createContact(contact);
+        app.contact().createContact(contact.inGroup(groups.iterator().next()));
         app.delay(15);
         assertThat(app.contact().count(), equalTo(before.size() + 1));
         Contacts after = app.db().contacts();

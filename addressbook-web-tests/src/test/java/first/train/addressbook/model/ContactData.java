@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.io.File;
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @XStreamAlias("contact")
 @Entity
@@ -56,6 +57,14 @@ public class ContactData {
     private String email2;
 
 
+    public Groups getGroups() {
+        return new Groups(groups);
+    }
+
+    @Expose
+    @Transient
+    private String email3;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -71,20 +80,13 @@ public class ContactData {
                 Objects.equals(email, that.email) &&
                 Objects.equals(email2, that.email2) &&
                 Objects.equals(email3, that.email3) &&
-                Objects.equals(allPhones, that.allPhones) &&
-                Objects.equals(allEmails, that.allEmails) &&
-                Objects.equals(photo, that.photo) &&
-                Objects.equals(group, that.group);
+                Objects.equals(photo, that.photo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname, address, mobilePhone, homePhone, workPhone, email, email2, email3, allPhones, allEmails, photo, group);
+        return Objects.hash(id, firstname, lastname, address, mobilePhone, homePhone, workPhone, email, email2, email3, photo);
     }
-
-    @Expose
-    @Transient
-    private String email3;
 
     @Expose
     @Transient
@@ -96,11 +98,12 @@ public class ContactData {
 
     @Expose
     @Transient
-private File photo;
+    private File photo;
 
-    @Expose
-    @Transient
-    private String group;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name="address_in_groups", joinColumns = @JoinColumn(name="id"), inverseJoinColumns = @JoinColumn(name="group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
+
 
     public File getPhoto() {
         return photo;
@@ -129,8 +132,6 @@ private File photo;
         return this;
     }
 
-
-
     public String getEmail2() {
         return email2;
     }
@@ -148,9 +149,6 @@ private File photo;
         this.email3 = email3;
         return this;
     }
-
-
-
 
     public ContactData withMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
@@ -175,11 +173,6 @@ private File photo;
         return this;
     }
 
-
-        public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
 
     public ContactData withId(int id) {
         this.id = id;
@@ -241,13 +234,16 @@ private File photo;
         return email;
     }
 
-    public String getGroup() {
-        return group;
+
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
+        return this;
     }
 
-
-
-
+    private Object readResolve() {
+        groups = new HashSet<GroupData>();
+        return this;
+    }
 
 }
 

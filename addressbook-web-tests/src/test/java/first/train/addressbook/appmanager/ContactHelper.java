@@ -5,6 +5,8 @@ import first.train.addressbook.model.Contacts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public void fillContactForm(ContactData contactData) {
+    public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstname());
         type(By.name("lastname"), contactData.getLastname());
         type(By.name("address"), contactData.getAddress());
@@ -28,6 +30,13 @@ public class ContactHelper extends HelperBase {
         type(By.name("email"), contactData.getEmail());
         attach(By.name("photo"), contactData.getPhoto());
 
+        if (creation) {
+            if (contactData.getGroups().size() > 0) {
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+            }
+        } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+        }
     }
 
 
@@ -67,7 +76,7 @@ public class ContactHelper extends HelperBase {
 
     public void createContact(ContactData contactData) {
 
-        fillContactForm(contactData);
+        fillContactForm(contactData, true);
         submitContactCreation();
         contactCache = null;
 
@@ -100,7 +109,7 @@ public class ContactHelper extends HelperBase {
 
     public void modifyContact(ContactData contact) {
         initContactModificationById(contact.getId());
-        fillContactForm(contact);
+        fillContactForm(contact, true);
         submitContactModification();
         contactCache = null;
     }

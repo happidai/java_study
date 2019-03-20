@@ -20,3 +20,4 @@ sandbox/src/main/java/first/train/sandbox/MySecondProgram.java
 addressbook-web-tests/build/tmp/test/jar_extract_1166161857477901996_tmp
 addressbook-web-tests/build/tmp/test/jar_extract_2463680192498407737_tmp
 addressbook-web-tests/build/tmp/testContacts/jar_extract_1851868264804686929_tmp
+*.log
