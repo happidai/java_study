@@ -79,8 +79,7 @@ public class ContactData {
                 Objects.equals(workPhone, that.workPhone) &&
                 Objects.equals(email, that.email) &&
                 Objects.equals(email2, that.email2) &&
-                Objects.equals(email3, that.email3) &&
-                Objects.equals(photo, that.photo);
+                Objects.equals(email3, that.email3);
     }
 
     @Override
