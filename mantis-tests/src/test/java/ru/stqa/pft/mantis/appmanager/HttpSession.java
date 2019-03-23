@@ -1,14 +1,14 @@
 package ru.stqa.pft.mantis.appmanager;
 
-import org.apache.hc.client5.http.classic.methods.HttpGet;
-import org.apache.hc.client5.http.classic.methods.HttpPost;
-import org.apache.hc.client5.http.entity.UrlEncodedFormEntity;
-import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
-import org.apache.hc.client5.http.impl.classic.CloseableHttpResponse;
-import org.apache.hc.client5.http.impl.classic.HttpClients;
-import org.apache.hc.core5.http.ParseException;
-import org.apache.hc.core5.http.io.entity.EntityUtils;
-import org.apache.hc.core5.http.message.BasicNameValuePair;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.client.LaxRedirectStrategy;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,10 +21,10 @@ public class HttpSession {
 
     public HttpSession(ApplicationManager app) {
         this.app = app;
-        httpclient = HttpClients.custom().setRedirectStrategy(new LaxRedirectStrategy()).build();
+       httpclient = HttpClients.custom().setRedirectStrategy(new LaxRedirectStrategy()).build();
     }
 
-    public boolean login(String username, String password) throws IOException, ParseException {
+    public boolean login(String username, String password) throws IOException {
         HttpPost post = new HttpPost(app.getProperty("web.baseUrl") + "/login.php");
         List<BasicNameValuePair> params = new ArrayList<>();
         params.add(new BasicNameValuePair("username", username));
@@ -38,7 +38,7 @@ public class HttpSession {
 
     }
 
-    private String getTextFrom(CloseableHttpResponse response) throws IOException, ParseException {
+    private String getTextFrom(CloseableHttpResponse response) throws IOException {
         try{
             return EntityUtils.toString(response.getEntity());
         } finally{
@@ -47,7 +47,7 @@ public class HttpSession {
 
     }
 
-    public boolean IsLoggedInAs(String username) throws IOException, ParseException {
+    public boolean isLoggedInAs(String username) throws IOException {
         HttpGet get =new HttpGet(app.getProperty("web.baseUrl") + "/index.php");
         CloseableHttpResponse response = httpclient.execute(get);
         String body = getTextFrom(response);
