@@ -1,14 +1,16 @@
 package first.train.addressbook.appmanager;
 
 import first.train.addressbook.model.ContactData;
+import first.train.addressbook.model.Contacts;
 import first.train.addressbook.model.GroupData;
 import first.train.addressbook.model.Groups;
-import first.train.addressbook.model.Contacts;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import java.util.List;
 
 public class DbHelper {
 
@@ -48,6 +50,13 @@ public class DbHelper {
 
     }
 
-
+    public Contacts contactByIdInDB(int contactId){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        List<ContactData> result = session.createQuery("from ContactData where id ='" + contactId + "'").list();
+        session.getTransaction().commit();
+        session.close();
+        return new Contacts(result);
+    }
 
 }

@@ -8,7 +8,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -89,5 +88,10 @@ public class ApplicationManager {
         return contactNavigationHelper;
     }
 
-    public DbHelper db() {return dbHelper;}
+
+    public DbHelper  db() {
+        if (dbHelper == null)
+            dbHelper = new DbHelper();
+        return dbHelper; }
 }
+

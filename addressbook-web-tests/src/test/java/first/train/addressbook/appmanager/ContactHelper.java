@@ -151,6 +151,49 @@ public class ContactHelper extends HelperBase {
 
     }
 
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+    }
 
+    public void initContactRemovingFromGroup() {
+        click(By.name("remove"));
+    }
+
+    public void selectGroupListById(int id) {
+        click(By.cssSelector("select[name=\"group\"] > option[value='" + id + "']"));
+    }
+
+//    public void removeContactFromGroup(ContactData contact, GroupData group) {
+//        selectGroupListById(group.getId());
+//        selectContactById(contact.getId());
+//        initContactRemovingFromGroup();
+//        contactCache = null;
+//
+//    }
+
+//    public void addContactToGroup(ContactData contact, GroupData group) {
+//        selectContactById(contact.getId());
+//        selectGroupById(group.getId());
+//        confirmContactToGroupAdding();
+//        contactCache = null;
+//
+//    }
+
+    private void confirmContactToGroupAdding() {
+        click(By.xpath("//input[@name='add']"));
+    }
+
+    private void selectGroupById(int id) {
+
+        click(By.cssSelector("select[name=\"to_group\"] > option[value='" + id + "']"));
+    }
+
+    public void addContactToGroup() {
+        wd.findElement(By.name("add")).click();
+    }
+
+    public void removeContactFromGroup() {
+        wd.findElement(By.cssSelector("input[name='remove']")).click();
+    }
 }
 

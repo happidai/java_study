@@ -5,12 +5,9 @@ import first.train.addressbook.model.Groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class GroupHelper extends HelperBase{
 
@@ -50,6 +47,12 @@ public class GroupHelper extends HelperBase{
         wd.findElement(By.cssSelector("input[value='"+ id +"']")).click();
 
     }
+
+    public void selectByIdOnHomePage(int id) {
+        Select select = new Select(wd.findElement(By.name("group")));
+        select.selectByValue(Integer.toString(id));
+    }
+
 
     public void initGroupModification() {
         click(By.name("edit"));
@@ -116,5 +119,10 @@ public class GroupHelper extends HelperBase{
 
     public int count() {
             return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public void selectNew(int id) {
+        Select select = new Select(wd.findElement(By.name("to_group")));
+        select.selectByValue(Integer.toString(id));
     }
 }
