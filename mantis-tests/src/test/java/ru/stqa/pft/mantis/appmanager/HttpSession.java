@@ -54,5 +54,12 @@ public class HttpSession {
         return body.contains(String.format("<span class=\"italic\">%s</span>", username));
     }
 
+    public boolean isLoggedInAsUser(String username) throws IOException {
+        HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "/my_view_page.php");
+        CloseableHttpResponse response = httpclient.execute(get);
+        String body = getTextFrom(response);
+        return body.contains(String.format("<a href=\"/mantisbt-2.20.0/account_page.php\">%s</a>", username));
+    }
+
 
 }
