@@ -18,10 +18,15 @@ HttpSession session = app.newSession();
         assertTrue(session.isLoggedInAs("administrator"));
 
 
+    }
+
+    @Test
+    public void changePass() throws IOException {
+//        testLogin();
+//        (By.cssSelector("a[href='Manage Users']"));
 
 
     }
-
 
 
 }
