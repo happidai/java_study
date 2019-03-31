@@ -7,6 +7,7 @@ import ru.stqa.pft.mantis.appmanager.HttpSession;
 import ru.stqa.pft.mantis.model.MailMessage;
 
 import javax.mail.MessagingException;
+import javax.xml.rpc.ServiceException;
 import java.io.IOException;
 import java.util.List;
 
@@ -20,7 +21,8 @@ public class ChangePassTests extends TestBase {
     }
 
     @Test
-    public void testChangePassword() throws IOException, MessagingException {
+    public void testChangePassword() throws IOException, MessagingException, ServiceException {
+        skipIfNotFixed(0000003);
         String newPassword = "newPassword";
         app.password().login();
         app.password().goToManagePage();
