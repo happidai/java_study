@@ -33,5 +33,5 @@ public class PasswordHelper extends HelperBase {
         wd.findElement(By.cssSelector("input[value='Reset Password']")).click();
     }
 
-    
+
 }
