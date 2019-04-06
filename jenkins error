@@ -1,0 +1,33 @@
+Started by user admin
+Building in workspace C:\Users\happi\.jenkins\workspace\sandbox
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/happidai/java_study # timeout=10
+Fetching upstream changes from https://github.com/happidai/java_study
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress https://github.com/happidai/java_study +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision bee120fda570301122143e4c65168fb9800f4b4b (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f bee120fda570301122143e4c65168fb9800f4b4b
+Commit message: "useTestNG to sandbox gradle added"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 9ee878b27e0c0b3544585e4ac9a14177e1143c35 # timeout=10
+[Gradle] - Launching build.
+[sandbox] $ cmd.exe /C "C:\Doc\Java\gradle-5.1.1\bin\gradle.bat clean test && exit %%ERRORLEVEL%%"
+Starting a Gradle Daemon, 1 busy and 3 stopped Daemons could not be reused, use --status for details
+> Task :clean
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+Terminate batch job (Y/N)? 
+Build was aborted
+Aborted by admin
+Recording test results
+ERROR: Step �Publish JUnit test result report� failed: No test report files were found. Configuration error?
+Finished: ABORTED
