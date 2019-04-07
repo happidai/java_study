@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="863c49b7-356a-4e13-be3d-a4fc5386d642" name="Default Changelist" comment="" />
+    <list default="true" id="863c49b7-356a-4e13-be3d-a4fc5386d642" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1029798999134847888_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1166161857477901996_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1750660209840523031_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1906042520265516158_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1933155770551064683_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_2463680192498407737_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_3379919410852931352_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_6709862619068581620_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_6723007717922703972_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_1409335110819566642_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_1851868264804686929_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_1860918241783675136_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_2366555394982047473_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_2945088794068549611_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_2975361138635281779_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3316655253096498398_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3656679292195519616_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3749358358668396010_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3936022786294016441_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_4610012228488754518_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_4729876631062675360_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5130398149768147278_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5347578301709977209_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5530037960280998247_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5575621974351416379_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5804240342537856365_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5922022162001322124_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_6570349746917857121_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_6575672327761515090_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_6617367589830251536_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_677672889261617837_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_7562458354915436755_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_8047696950326689000_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_8121546336428590278_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_8290580784462706240_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_8862979518710567448_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
     <ignored path="$PROJECT_DIR$/sandbox/build/" />
     <ignored path="$PROJECT_DIR$/sandbox/out/" />
@@ -112,7 +150,7 @@
           <entry key="json" value="4" />
           <entry key="log" value="2" />
           <entry key="php" value="4" />
-          <entry key="properties" value="9" />
+          <entry key="properties" value="11" />
           <entry key="testng-contacts" value="5" />
           <entry key="testng-groups" value="3" />
           <entry key="wsdl" value="1" />
@@ -126,7 +164,7 @@
           <entry key="JAVA" value="409" />
           <entry key="JSON" value="4" />
           <entry key="PLAIN_TEXT" value="25" />
-          <entry key="Properties" value="9" />
+          <entry key="Properties" value="11" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -170,11 +208,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="591">
               <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -2100,11 +2156,11 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/first/train/addressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/sandbox/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" />
       </list>
     </option>
   </component>
@@ -2114,7 +2170,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1036" />
@@ -2189,7 +2245,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554644208396" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554644836599" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
@@ -2379,7 +2435,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
@@ -2809,20 +2865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" lean-forward="true" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/first/train/addressbook/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -2851,6 +2893,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
