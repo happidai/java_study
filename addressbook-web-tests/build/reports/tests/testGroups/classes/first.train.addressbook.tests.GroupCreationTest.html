@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class first.train.addressbook.tests.GroupCreationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class first.train.addressbook.tests.GroupCreationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/first.train.addressbook.tests.html">first.train.addressbook.tests</a> &gt; GroupCreationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m14.99s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBadGroupCreation</td>
+<td class="success">27.213s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGroupCreation[0](GroupData{name='test 0', id='2147483647'})</td>
+<td class="success">16.039s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGroupCreation[1](GroupData{name='test 1', id='2147483647'})</td>
+<td class="success">17.186s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGroupCreation[2](GroupData{name='test 2', id='2147483647'})</td>
+<td class="success">14.554s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:48:21.166 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testBadGroupCreation with parameters[]
+16:48:48.401 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testBadGroupCreation
+16:48:48.805 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testGroupCreation with parameters[GroupData{name='test 0', id='2147483647'}]
+16:48:52.616 [Test worker] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+16:48:52.718 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:48:52.718 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:48:52.819 [Test worker] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@22ec8338
+16:48:53.091 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from first.train.addressbook.model.GroupData
+16:48:53.231 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16:48:53.284 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'from'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[DOT] Node: '.'
+                |  |  |  +-[IDENT] Node: 'first'
+                |  |  |  \-[IDENT] Node: 'train'
+                |  |  \-[IDENT] Node: 'addressbook'
+                |  \-[IDENT] Node: 'model'
+                \-[IDENT] Node: 'GroupData'
+
+16:48:53.486 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select &lt;&lt; begin [level=1, statement=select]
+16:48:53.557 [Test worker] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : first.train.addressbook.model.GroupData (&lt;no alias&gt;) -&gt; groupdata0_
+16:48:53.597 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+16:48:53.597 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} group_list groupdata0_ ) )
+16:48:53.617 [Test worker] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+16:48:53.688 [Test worker] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [group_list groupdata0_]
+16:48:53.688 [Test worker] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select &gt;&gt; end [level=1, statement=select]
+16:48:53.688 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (group_list)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'groupdata0_.group_id as group_id1_2_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=first.train.addressbook.model.GroupData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[groupdata0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'group_list groupdata0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=group_list,tableAlias=groupdata0_,origin=null,columns={,className=first.train.addressbook.model.GroupData}}
+
+16:48:53.688 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16:48:53.748 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from first.train.addressbook.model.GroupData
+16:48:53.748 [Test worker] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:48:53.748 [Test worker] DEBUG o.h.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+16:48:53.849 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:48:54.021 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:48:54.031 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:48:54.062 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:48:54.070 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:48:54.070 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:48:54.070 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:48:54.072 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:48:54.080 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:48:54.080 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:48:54.082 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:48:54.092 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:48:54.203 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:48:54.211 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:48:54.211 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:48:54.211 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:48:54.213 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:48:54.213 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:48:54.213 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:48:54.272 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:48:54.274 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:48:54.282 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:48:54.282 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:48:54.282 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:48:54.284 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:48:54.292 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:48:54.294 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:48:54.294 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:48:54.294 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:48:54.304 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:48:54.304 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:48:54.314 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:48:54.385 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:48:54.393 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:48:54.395 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:48:54.403 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:48:54.403 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:48:54.403 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:48:54.405 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:48:54.405 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:48:54.405 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:48:54.446 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:48:54.446 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 27 objects
+16:48:54.446 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 27 collections
+16:48:54.446 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:48:54.454 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:48:54.454 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:48:54.456 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=78, contacts=&lt;uninitialized&gt;}
+16:48:54.464 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=89, contacts=&lt;uninitialized&gt;}
+16:48:54.464 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=88, contacts=&lt;uninitialized&gt;}
+16:48:54.464 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:48:54.504 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:48:54.545 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:04.642 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:49:04.642 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:49:04.731 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:49:04.783 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:49:04.791 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16:49:04.793 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#101]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:49:04.801 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:49:04.803 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#101]
+16:49:04.812 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#101]
+16:49:04.814 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:49:04.814 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:49:04.814 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:49:04.814 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:49:04.822 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:49:04.824 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#101], was: [first.train.addressbook.model.GroupData.contacts#101] (uninitialized)
+16:49:04.824 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 28 objects
+16:49:04.824 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 28 collections
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=101, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=78, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=89, contacts=&lt;uninitialized&gt;}
+16:49:04.824 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:49:04.854 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:04.882 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:04.894 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testGroupCreation
+16:49:04.894 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testGroupCreation with parameters[GroupData{name='test 1', id='2147483647'}]
+16:49:07.853 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:49:07.853 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:49:07.924 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:49:07.936 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:49:07.944 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:49:07.946 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16:49:07.954 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#101]
+16:49:07.954 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:49:07.954 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:49:07.956 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:49:07.964 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:49:07.964 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:49:07.964 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#101]
+16:49:07.964 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#101]
+16:49:07.964 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:49:07.964 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:49:07.964 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:49:07.966 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:49:07.974 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:49:07.974 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:49:07.974 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#101], was: [first.train.addressbook.model.GroupData.contacts#101] (uninitialized)
+16:49:07.974 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 28 objects
+16:49:07.974 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 28 collections
+16:49:07.974 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:49:07.974 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:49:07.974 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=101, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=78, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=89, contacts=&lt;uninitialized&gt;}
+16:49:07.976 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:49:08.055 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:08.108 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:21.696 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:49:21.696 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:49:21.838 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:49:21.909 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:49:21.917 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#101]
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 28
+16:49:21.919 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#102]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:49:21.919 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:49:21.927 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:49:21.929 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#101]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#101]
+16:49:21.937 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#102]
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#102]
+16:49:21.939 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:49:21.939 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:49:21.939 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:49:21.939 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:49:21.947 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:49:21.947 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:49:21.947 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:49:21.947 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:49:21.947 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:49:21.949 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#101], was: [first.train.addressbook.model.GroupData.contacts#101] (uninitialized)
+16:49:21.949 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#102], was: [first.train.addressbook.model.GroupData.contacts#102] (uninitialized)
+16:49:21.949 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 29 objects
+16:49:21.949 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 29 collections
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=101, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=102, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=78, contacts=&lt;uninitialized&gt;}
+16:49:21.949 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:49:22.028 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:22.080 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:22.080 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testGroupCreation
+16:49:22.089 [Test worker] INFO  f.train.addressbook.tests.TestBase - Start test testGroupCreation with parameters[GroupData{name='test 2', id='2147483647'}]
+16:49:25.104 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:49:25.104 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:49:25.106 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:49:25.106 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:49:25.114 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:49:25.114 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:49:25.116 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:49:25.124 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:49:25.124 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:49:25.124 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:49:25.124 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#101]
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 28
+16:49:25.126 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#102]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:49:25.134 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:49:25.136 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:49:25.144 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#101]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#101]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#102]
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#102]
+16:49:25.146 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:49:25.146 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:49:25.146 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:49:25.146 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:49:25.154 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:49:25.154 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:49:25.154 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:49:25.154 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:49:25.154 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#101], was: [first.train.addressbook.model.GroupData.contacts#101] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#102], was: [first.train.addressbook.model.GroupData.contacts#102] (uninitialized)
+16:49:25.156 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 29 objects
+16:49:25.156 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 29 collections
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=101, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=102, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:49:25.156 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:49:25.164 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:49:25.164 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:49:25.164 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=78, contacts=&lt;uninitialized&gt;}
+16:49:25.164 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:49:25.235 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:25.286 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:36.421 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+16:49:36.421 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - begin
+16:49:36.502 [Test worker] DEBUG org.hibernate.SQL - select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+16:49:36.524 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 0
+16:49:36.525 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#72]
+16:49:36.525 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 1
+16:49:36.525 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#73]
+16:49:36.525 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 2
+16:49:36.526 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#75]
+16:49:36.526 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 3
+16:49:36.526 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#76]
+16:49:36.526 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 4
+16:49:36.526 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#78]
+16:49:36.527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 5
+16:49:36.527 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#79]
+16:49:36.527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 6
+16:49:36.527 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#80]
+16:49:36.527 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 7
+16:49:36.528 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#81]
+16:49:36.528 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 8
+16:49:36.528 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#82]
+16:49:36.528 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 9
+16:49:36.528 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#83]
+16:49:36.529 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 10
+16:49:36.529 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#84]
+16:49:36.529 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 11
+16:49:36.530 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#85]
+16:49:36.530 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 12
+16:49:36.530 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#86]
+16:49:36.530 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 13
+16:49:36.530 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#87]
+16:49:36.531 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 14
+16:49:36.531 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#88]
+16:49:36.531 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 15
+16:49:36.531 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#89]
+16:49:36.532 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 16
+16:49:36.532 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#90]
+16:49:36.532 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 17
+16:49:36.532 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#91]
+16:49:36.532 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 18
+16:49:36.533 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#92]
+16:49:36.533 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 19
+16:49:36.533 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#93]
+16:49:36.533 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 20
+16:49:36.534 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#94]
+16:49:36.534 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 21
+16:49:36.534 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#95]
+16:49:36.534 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 22
+16:49:36.534 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#96]
+16:49:36.535 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 23
+16:49:36.535 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#97]
+16:49:36.535 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 24
+16:49:36.536 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#98]
+16:49:36.537 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 25
+16:49:36.537 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#99]
+16:49:36.537 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 26
+16:49:36.537 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#100]
+16:49:36.538 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 27
+16:49:36.538 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#101]
+16:49:36.538 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 28
+16:49:36.538 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#102]
+16:49:36.539 [Test worker] DEBUG org.hibernate.loader.Loader - Result set row: 29
+16:49:36.539 [Test worker] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[first.train.addressbook.model.GroupData#103]
+16:49:36.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#72]
+16:49:36.539 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#72]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#73]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#73]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#75]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#75]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#76]
+16:49:36.540 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#76]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#78]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#78]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#79]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#79]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#80]
+16:49:36.541 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#80]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#81]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#81]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#82]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#82]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#83]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#83]
+16:49:36.542 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#84]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#84]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#85]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#85]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#86]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#86]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#87]
+16:49:36.543 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#87]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#88]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#88]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#89]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#89]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#90]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#90]
+16:49:36.544 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#91]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#91]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#92]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#92]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#93]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#93]
+16:49:36.545 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#94]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#94]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#95]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#95]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#96]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#96]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#97]
+16:49:36.546 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#97]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#98]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#98]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#99]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#99]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#100]
+16:49:36.547 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#100]
+16:49:36.548 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#101]
+16:49:36.549 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#101]
+16:49:36.549 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#102]
+16:49:36.549 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#102]
+16:49:36.549 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [first.train.addressbook.model.GroupData#103]
+16:49:36.549 [Test worker] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [first.train.addressbook.model.GroupData#103]
+16:49:36.550 [Test worker] DEBUG o.h.e.t.internal.TransactionImpl - committing
+16:49:36.550 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+16:49:36.550 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+16:49:36.551 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#72], was: [first.train.addressbook.model.GroupData.contacts#72] (uninitialized)
+16:49:36.551 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#73], was: [first.train.addressbook.model.GroupData.contacts#73] (uninitialized)
+16:49:36.551 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#75], was: [first.train.addressbook.model.GroupData.contacts#75] (uninitialized)
+16:49:36.551 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#76], was: [first.train.addressbook.model.GroupData.contacts#76] (uninitialized)
+16:49:36.552 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#78], was: [first.train.addressbook.model.GroupData.contacts#78] (uninitialized)
+16:49:36.552 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#79], was: [first.train.addressbook.model.GroupData.contacts#79] (uninitialized)
+16:49:36.553 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#80], was: [first.train.addressbook.model.GroupData.contacts#80] (uninitialized)
+16:49:36.553 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#81], was: [first.train.addressbook.model.GroupData.contacts#81] (uninitialized)
+16:49:36.553 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#82], was: [first.train.addressbook.model.GroupData.contacts#82] (uninitialized)
+16:49:36.553 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#83], was: [first.train.addressbook.model.GroupData.contacts#83] (uninitialized)
+16:49:36.554 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#84], was: [first.train.addressbook.model.GroupData.contacts#84] (uninitialized)
+16:49:36.554 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#85], was: [first.train.addressbook.model.GroupData.contacts#85] (uninitialized)
+16:49:36.554 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#86], was: [first.train.addressbook.model.GroupData.contacts#86] (uninitialized)
+16:49:36.554 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#87], was: [first.train.addressbook.model.GroupData.contacts#87] (uninitialized)
+16:49:36.554 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#88], was: [first.train.addressbook.model.GroupData.contacts#88] (uninitialized)
+16:49:36.555 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#89], was: [first.train.addressbook.model.GroupData.contacts#89] (uninitialized)
+16:49:36.555 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#90], was: [first.train.addressbook.model.GroupData.contacts#90] (uninitialized)
+16:49:36.555 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#91], was: [first.train.addressbook.model.GroupData.contacts#91] (uninitialized)
+16:49:36.555 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#92], was: [first.train.addressbook.model.GroupData.contacts#92] (uninitialized)
+16:49:36.556 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#93], was: [first.train.addressbook.model.GroupData.contacts#93] (uninitialized)
+16:49:36.556 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#94], was: [first.train.addressbook.model.GroupData.contacts#94] (uninitialized)
+16:49:36.557 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#95], was: [first.train.addressbook.model.GroupData.contacts#95] (uninitialized)
+16:49:36.557 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#96], was: [first.train.addressbook.model.GroupData.contacts#96] (uninitialized)
+16:49:36.557 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#97], was: [first.train.addressbook.model.GroupData.contacts#97] (uninitialized)
+16:49:36.557 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#98], was: [first.train.addressbook.model.GroupData.contacts#98] (uninitialized)
+16:49:36.558 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#99], was: [first.train.addressbook.model.GroupData.contacts#99] (uninitialized)
+16:49:36.558 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#100], was: [first.train.addressbook.model.GroupData.contacts#100] (uninitialized)
+16:49:36.558 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#101], was: [first.train.addressbook.model.GroupData.contacts#101] (uninitialized)
+16:49:36.558 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#102], was: [first.train.addressbook.model.GroupData.contacts#102] (uninitialized)
+16:49:36.559 [Test worker] DEBUG o.h.engine.internal.Collections - Collection found: [first.train.addressbook.model.GroupData.contacts#103], was: [first.train.addressbook.model.GroupData.contacts#103] (uninitialized)
+16:49:36.559 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 30 objects
+16:49:36.559 [Test worker] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 30 collections
+16:49:36.559 [Test worker] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+16:49:36.560 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=73, contacts=&lt;uninitialized&gt;}
+16:49:36.560 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=72, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=75, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=97, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=96, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=99, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=98, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=93, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=92, contacts=&lt;uninitialized&gt;}
+16:49:36.561 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=95, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=94, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=101, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=100, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=103, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=102, contacts=&lt;uninitialized&gt;}
+16:49:36.562 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 1, name=test 1, header=header 1, id=81, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=test2, name=test3, header=test1, id=80, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 0, name=test 0, header=header 0, id=83, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=82, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=76, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - first.train.addressbook.model.GroupData{footer=footer 2, name=test 2, header=header 2, id=79, contacts=&lt;uninitialized&gt;}
+16:49:36.563 [Test worker] DEBUG o.h.internal.util.EntityPrinter - More......
+16:49:36.596 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:36.641 [Test worker] DEBUG o.h.r.j.i.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+16:49:36.644 [Test worker] INFO  f.train.addressbook.tests.TestBase - Stop test testGroupCreation
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.1.1</a> at Apr 7, 2019 4:49:47 PM</p>
+</div>
+</div>
+</body>
+</html>
