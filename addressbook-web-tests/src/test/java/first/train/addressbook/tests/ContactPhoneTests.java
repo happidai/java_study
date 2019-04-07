@@ -1,25 +1,23 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactPhoneTests extends TestBase {
 
     @Test
     public void testContactPhones() {
-        app.goToContact().HomePage();
+
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
 
-        assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
+      assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
 
         assertThat(contact.getAllEmails(), equalTo(mergeEmails(contactInfoFromEditForm)));
 

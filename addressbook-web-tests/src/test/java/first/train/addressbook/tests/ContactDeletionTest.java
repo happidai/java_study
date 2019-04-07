@@ -2,21 +2,17 @@ package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Set;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.testng.Assert.assertEquals;
 
 public class ContactDeletionTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions(){
-        app.goToContact().HomePage();
+        //app.goToContact().HomePage();
 
         if(app.db().contacts().size() == 0){
             app.goToContact().gotoContactPageEdit();
@@ -27,13 +23,10 @@ public class ContactDeletionTest extends TestBase {
 
     @Test
     public void testContactDeletion() throws Exception {
-
         Contacts before = app.db().contacts();
         ContactData deletedContact = before.iterator().next();
-        app.goToContact().HomePage();
         app.contact().delete(deletedContact);
         app.delay(10);
-        app.goToContact().HomePage();
         assertThat(app.contact().count(), equalTo(before.size() - 1));
         Contacts after = app.db().contacts();
          assertThat(after, equalTo(before.without(deletedContact)));

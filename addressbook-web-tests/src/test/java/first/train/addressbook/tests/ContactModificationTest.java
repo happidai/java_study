@@ -1,23 +1,15 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
-import first.train.addressbook.model.Contacts;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Comparator;
-import java.util.List;
 import java.util.Set;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class ContactModificationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions(){
-        app.goToContact().HomePage();
 
         if(app.db().contacts().size() == 0){
             app.goToContact().gotoContactPageEdit();
@@ -28,14 +20,11 @@ public class ContactModificationTest extends TestBase {
     @Test
     public void testContactModification() {
 
-        app.goToContact().HomePage();
         Set<ContactData> before = app.db().contacts();
         ContactData modifiedContact = before.iterator().next();
         ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("Olga").withLastname("Zhivotovskaia");
-        app.goToContact().HomePage();
         app.contact().modifyContact(contact);
-        app.goToContact().HomePage();
-        assertThat(app.contact().count(), equalTo(before.size()));
+       // assertThat(app.contact().count(), equalTo(before.size()));
         Set<ContactData> after = app.db().contacts();
         verifyContactListInUi();
 

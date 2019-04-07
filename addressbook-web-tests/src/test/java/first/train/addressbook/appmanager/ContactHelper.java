@@ -2,6 +2,7 @@ package first.train.addressbook.appmanager;
 
 import first.train.addressbook.model.ContactData;
 import first.train.addressbook.model.Contacts;
+import first.train.addressbook.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -118,6 +119,7 @@ public class ContactHelper extends HelperBase {
     public void delete(ContactData contact) {
 
         initContactModificationById(contact.getId());
+       // selectContactById(contact.getId());
         deleteSelectedContact();
         contactCache = null;
     }
@@ -163,13 +165,13 @@ public class ContactHelper extends HelperBase {
         click(By.cssSelector("select[name=\"group\"] > option[value='" + id + "']"));
     }
 
-//    public void removeContactFromGroup(ContactData contact, GroupData group) {
-//        selectGroupListById(group.getId());
-//        selectContactById(contact.getId());
-//        initContactRemovingFromGroup();
-//        contactCache = null;
-//
-//    }
+    public void removeContactFromGroup2(ContactData contact, GroupData group) {
+        selectGroupListById(group.getId());
+        selectContactById(contact.getId());
+        initContactRemovingFromGroup();
+        contactCache = null;
+
+    }
 
 //    public void addContactToGroup(ContactData contact, GroupData group) {
 //        selectContactById(contact.getId());

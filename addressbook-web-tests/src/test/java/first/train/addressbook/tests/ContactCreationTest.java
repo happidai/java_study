@@ -85,7 +85,7 @@ public class ContactCreationTest extends TestBase {
 //        System.out.println(photo.exists());
 //    }
 
-    @Test
+    @Test(enabled = false)
     public void testBadContactCreation() throws Exception {
 
         Contacts before = app.contact().all();

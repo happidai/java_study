@@ -13,7 +13,7 @@ public class AddContactToGroupTest extends TestBase{
     @BeforeClass
     public void ensurePreconditions() {
         if (app.db().contacts().size() == 0) {
-            app.goToContact().HomePage();
+            app.goToContact().gotoContactPageEdit();
             app.contact().createContact(new ContactData()
                     .withFirstname("TestTest").withEmail2("email2"));
         }
@@ -33,6 +33,7 @@ public class AddContactToGroupTest extends TestBase{
         }
     }
 
+
     @Test
     public void testAddContactToGroup() {
         ContactData contact = null;
@@ -44,13 +45,14 @@ public class AddContactToGroupTest extends TestBase{
         Groups allGroups = app.db().groups();
         allGroups.removeAll(before);
         GroupData group = allGroups.iterator().next();
-        app.goToContact().HomePage();
-        app.group().selectNew(group.getId());
         app.contact().selectContactById(contact.getId());
+        app.group().selectNew(group.getId());
         app.contact().addContactToGroup();
         Groups after = app.db().contactByIdInDB(contact.getId()).iterator().next().getGroups();
         assertEquals(after, before.withAdded(group));
     }
+
+
 }
 
 

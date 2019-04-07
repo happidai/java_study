@@ -16,9 +16,9 @@ public class ContactNavigationHelper extends HelperBase{
     }
 
     public void HomePage() {
-        if(isElementPresent(By.id("maintable"))){
-            return;
-        }
+//        if(isElementPresent(By.id("maintable"))){
+//            return;
+//        }
         click(By.linkText("home page"));
     }
 }

@@ -1,60 +1,55 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
+import first.train.addressbook.model.Contacts;
 import first.train.addressbook.model.GroupData;
 import first.train.addressbook.model.Groups;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 public class DeleteContactFromGroupTest extends TestBase{
 
-    @BeforeClass
+    @BeforeMethod
     public void ensurePreconditions() {
-        if (app.db().contacts().size() == 0) {
-            app.goToContact().HomePage();
-            app.contact().createContact(new ContactData()
-                    .withFirstname("TestTest").withEmail2("email2"));
-        }
+
         if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
-            app.group().create(new GroupData()
-                    .withName("TestTest"));
+            app.group().create(new GroupData().withName("test1").withHeader("test2").withFooter("test3"));
+        }
+        if (app.db().contacts().size() == 0) {
+            app.goToContact().HomePage();
+            Groups groups = app.db().groups();
+            app.contact().createContact(new ContactData()
+                    .withFirstname("Olga").withLastname("Zhvotovskaia").withAddress("Saint-Petersburg").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("email@email.com").inGroup(groups.iterator().next()));
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void testDeleteContactFromGroup() {
-        Groups before = null;
-        GroupData availableGroup = null;
-        ContactData availableContact = null;
-        int groupId = 0;
-        for (ContactData contact : app.db().contacts()) {
-            if (contact.getGroups().size() == 0) {
-                app.goToContact().HomePage();
-                app.contact().selectContactById(contact.getId());
-                app.contact().addContactToGroup();
-                availableContact = contact;
-                availableGroup = app.db().contactByIdInDB(availableContact.getId()).iterator().next().getGroups().iterator().next();
-                groupId = availableGroup.getId();
-                before = contact.getGroups();
-            } else {
-                availableContact = contact;
-                availableGroup = contact.getGroups().iterator().next();
-                groupId = availableGroup.getId();
-                before = contact.getGroups();
-            }
+
+        Contacts contactsBefore = app.db().contacts();
+        Groups groupList = app.db().groups();
+        ContactData selectedContact = contactsBefore.iterator().next();
+        GroupData fromGroup = groupList.iterator().next();
+        app.contact().removeContactFromGroup2(selectedContact, fromGroup);
+        Contacts contactsAfter = app.db().contacts();
+        assertThat(contactsAfter, equalTo(contactsBefore));
+        verifyContactListInUi();
         }
-        app.goToContact().HomePage();
-        app.group().selectByIdOnHomePage(groupId);
-        app.contact().selectContactById(availableContact.getId());
-        app.contact().removeContactFromGroup();
-        Groups after = app.db().contactByIdInDB(availableContact.getId()).iterator().next().getGroups();
-        assertEquals(after, before.without(availableGroup));
+//        app.goToContact().HomePage();
+//        app.group().selectByIdOnHomePage(groupId);
+//        app.contact().selectContactById(availableContact.getId());
+//        app.contact().removeContactFromGroup();
+//        Groups after = app.db().contactByIdInDB(availableContact.getId()).iterator().next().getGroups();
+//        assertEquals(after, before.without(availableGroup));
+//removeContactFromGroup(selectedContact, fromGroup);
     }
 
 
 
 
-}
+
+
