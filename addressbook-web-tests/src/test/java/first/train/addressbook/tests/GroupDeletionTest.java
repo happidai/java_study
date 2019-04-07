@@ -2,12 +2,9 @@ package first.train.addressbook.tests;
 
 import first.train.addressbook.model.GroupData;
 import first.train.addressbook.model.Groups;
-import org.hamcrest.Matchers;
 import org.testng.Assert;
-import org.testng.annotations.*;
-
-import java.util.List;
-import java.util.Set;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -27,7 +24,7 @@ public class GroupDeletionTest extends TestBase {
 
 
 
-    @Test
+    @Test(enabled = false)
     public void testGroupDeletion() throws Exception {
         Groups before = app.db().groups();
         GroupData deletedGroup = before.iterator().next();

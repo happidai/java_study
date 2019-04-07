@@ -1,17 +1,13 @@
 package first.train.addressbook.tests;
 
 import first.train.addressbook.model.ContactData;
-import first.train.addressbook.model.GroupData;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.SharedSessionContract;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.awt.*;
 
 public class HbConnectionTest {
 
@@ -38,7 +34,7 @@ public class HbConnectionTest {
 
 
 
-    @Test
+    @Test(enabled = false)
     public void testHbConnection() {
 
 //        Session session = sessionFactory.openSession();

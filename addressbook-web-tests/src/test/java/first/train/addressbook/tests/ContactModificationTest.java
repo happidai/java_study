@@ -17,7 +17,7 @@ public class ContactModificationTest extends TestBase {
         }
     }
 
-    @Test
+    @Test(enabled = false)
     public void testContactModification() {
 
         Set<ContactData> before = app.db().contacts();

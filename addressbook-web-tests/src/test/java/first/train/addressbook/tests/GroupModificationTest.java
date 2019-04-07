@@ -2,13 +2,8 @@ package first.train.addressbook.tests;
 
 import first.train.addressbook.model.GroupData;
 import first.train.addressbook.model.Groups;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
@@ -29,7 +24,7 @@ public class GroupModificationTest extends TestBase {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void testGroupModification() {
 
         Groups before = app.db().groups();

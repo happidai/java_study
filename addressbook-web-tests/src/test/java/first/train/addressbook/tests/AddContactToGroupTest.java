@@ -34,7 +34,7 @@ public class AddContactToGroupTest extends TestBase{
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void testAddContactToGroup() {
         ContactData contact = null;
         for (ContactData newContact : app.db().contacts())

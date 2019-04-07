@@ -21,7 +21,7 @@ public class ContactDeletionTest extends TestBase {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public void testContactDeletion() throws Exception {
         Contacts before = app.db().contacts();
         ContactData deletedContact = before.iterator().next();
