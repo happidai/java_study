@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="first.train.sandbox.PointTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-06T15:45:44" hostname="AcerOZh" time="0.0">
+  <properties/>
+  <testcase name="testDistance" classname="first.train.sandbox.PointTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
