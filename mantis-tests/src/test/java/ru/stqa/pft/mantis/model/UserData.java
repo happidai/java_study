@@ -15,6 +15,7 @@ public class UserData {
     @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Column(name = "username")
+    private  String username;
     private String name;
     @Column(name = "email")
     private String email;
@@ -30,6 +31,8 @@ public class UserData {
     public String getEmail() {
         return email;
     }
+
+    public String getUsername(){ return username; }
 
     @Override
     public String toString() {
